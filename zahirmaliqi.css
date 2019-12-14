@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background:-webkit-linear-gradient(left,black,black,#800000);
+  background:-webkit-linear-gradient(left,black,black);
 }
 .row {
     column-count:4;
