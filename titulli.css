@@ -19,12 +19,16 @@ word-wrap:break-word;
 .titulli{
 font-family:"Times New Roman","Courier New",sans-serif;
 text-align:center;
-font-size:80px;
-color:#5A5A5A;
+font-size:85px;
+color:black;
 font-weight:lighter;
 margin-top:15px;
 margin-bottom:0px;
 
+}
+.redbig{
+	color:#800000;
+	font-family: Bookman Old Style;
 }
 .d1{
 font-family:"Times New Roman","Courier New",sans-serif;
