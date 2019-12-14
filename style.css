@@ -8,7 +8,6 @@ header{
 }
 
 
-
 div.h6{
 	text-align: left;
 	float:left;
@@ -42,9 +41,8 @@ div.ikonat{
     width:200px;
     font-size: 15px;
     font-family: "Times New Roman", Times, serif;
-    
+    }
 
-}
 .submit{height:30px;
     margin-right: 40px  ;
     margin-left: 1px;
@@ -58,19 +56,18 @@ div.ikonat{
     font-size: 14px;
     font-family: "Times New Roman", Times, serif;
 	}
-	.submit:hover{
-	background-color:black;
-}
+
+.submit:hover{
+	      background-color:black;
+              }
     
-
-
-
 nav ul li{
     padding: 10px;
     list-style:none;
     display: inline;
     
 }
+
 nav#mainMenu
 {
     background:-webkit-linear-gradient(left,white,white,red);
@@ -143,9 +140,6 @@ a:visited ul
  {
   color: rgb(0, 0, 0);
 }
-
-
-
 
 
 a:hover {
