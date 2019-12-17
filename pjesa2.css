@@ -92,3 +92,22 @@ body{
   top: 212.5%;
   left: 96%;
 }
+
+.sip1 {
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 25%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+
+  
+}
+div.sip2 {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 17px;
+  background:-webkit-linear-gradient(left,#8B0000,black,black); 
+
+  
+}
