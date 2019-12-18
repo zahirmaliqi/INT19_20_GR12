@@ -103,11 +103,13 @@ body{
 
   
 }
-div.sip2 {
+.sip2 {
   text-align: center;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 18px;
   background:-webkit-linear-gradient(left,#8B0000,black,black); 
-
-  
+}
+.fontshadow{
+  color: white;
+  text-shadow: 4px 4px 4px red;
 }
