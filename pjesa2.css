@@ -37,7 +37,9 @@ body{
   width:1280px;
   height:610px;
  }
- .img1:hover{
+ .img1:hover,
+ .woman:hover,
+ .u18:hover{
  	opacity:0.6;
  }
 
