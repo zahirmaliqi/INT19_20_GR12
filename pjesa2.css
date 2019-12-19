@@ -113,3 +113,34 @@ body{
   color: white;
   text-shadow: 4px 4px 4px red;
 }
+#figold{
+  width: 100%;
+  height: 408px;
+}
+
+.bttn{
+      border-radius:15px;
+      color:white;
+      font-size:15px;
+      padding: 5px 15px;
+      background:#800000;
+      width:300px;
+      float: right;
+      position: absolute;
+     top: 307.5%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-color: black;
+
+}
+
+.ab{
+  margin-right: 20px;
+  margin-left: 20px
+
+}
+.ab1{
+  margin-right: 20px;
+  margin-left: 20px
+
+}
