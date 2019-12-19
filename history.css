@@ -84,3 +84,7 @@ img:hover {
 h3{
 color:#800000;
 font-style:oblique;}
+
+audio{
+	margin:20px;
+}
