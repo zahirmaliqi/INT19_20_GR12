@@ -1,0 +1,106 @@
+#klasa1 {
+    color: rgb(0, 0, 0);
+    padding: 32px;
+    border-radius: 12px;
+
+    font-family: fantasy;
+    font-size: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    background:-webkit-linear-gradient(left,rgb(253, 253, 6),rgb(0, 0, 0),rgb(0, 0, 0),#000000) ;
+    padding:10px;
+    
+
+}
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;}
+    .column1 {
+        float: left;
+        width: 90px;
+        padding: 10px;
+        
+      }
+
+		
+		
+		.flip-box {
+		  background-color: transparent;
+		  width: 320px;
+		  height: 230px;
+		 
+          perspective: 1000px;
+          padding-left:20px;
+		}
+		
+		.flip-box-inner {
+		  position: relative;
+		  width: 100%;
+		  height: 100%;
+          text-align: top;
+          
+          
+		  transition: transform 0.8s;
+		  transform-style: preserve-3d;
+		}
+		
+		.flip-box:hover .flip-box-inner {
+		  transform: rotateY(180deg);
+		}
+		
+		.flip-box-front, .flip-box-back{
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  backface-visibility: hidden;
+		}
+		
+		.flip-box-front {
+		  background-color: white;
+		  color: black;
+		}
+		
+        .flip-box-back {border:1px solid yellow;
+            border-radius: 12px;
+
+            background-color:black;
+         font-size: 20px;
+         line-height: 20%;
+		  transform: rotateY(180deg);
+        }
+        
+        .flip-box-back p {
+            font-family: Times, "Times New Roman", serif;
+            color: white;
+         }
+	
+        
+        .container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        
+        .bottom-left {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+        }
+        
+        .bottom-left h1{font-family: fantasy;
+            line-height: 15%;
+            color: white;
+            text-align: left;
+            font-size:30px;
+            font-weight: 100;
+            
+
+        }
+        #numri{font-family: fantasy;
+            line-height: 150%;
+            text-decoration: none;
+            font-size:20px ;
+            font-weight: 100;
+
+        }
+        
