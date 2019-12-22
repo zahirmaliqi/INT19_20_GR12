@@ -77,21 +77,21 @@ body{
   opacity:1;
 }
 #buttonstyle{
-  top: 157%;
+  top: 160%;
   left: 45%;
 }
 
 #buttonstyle1{
-  top: 157%;
+  top: 160%;
   left: 96%;
 }
 #buttonstyle2{
-  top: 212.5%;
+  top: 215.5%;
   left: 45%;
 }
 
 #buttonstyle3{
-  top: 212.5%;
+  top: 215.5%;
   left: 96%;
 }
 
@@ -129,7 +129,7 @@ body{
       width:300px;
       float: right;
       position: absolute;
-     top: 307.5%;
+     top: 310.5%;
      left: 50%;
      transform: translate(-50%, -50%);
      border-color: black;
