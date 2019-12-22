@@ -12,7 +12,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function() {
-    $("span").toggle();
+    $("#Hide").toggle();
   });
 });
 </script>
@@ -108,24 +108,18 @@ $(document).ready(function(){
 	  <address  class="fontshadow"><b>Address:<b>Sir Matt Busby Way, Stretford, Manchester M16 0RA, United Kingdom</address></p>
   </div>
   </div>
-	  <div class="row1" >
-  	
-	
-<button class="bttn" >Hide or unhide</button>
-<span>
-	
-	<div class="ab" >
-    <img src="old1.jpeg" id="figold">
-	</div>
-	
-	<div class="ab1">
-	<img src="old2.jpeg" id="figold">
-	</div>
-</span>
+<div><button class="bttn" >Hide or unhide</button></div>
+  <div class="row1" id="Hide">
+  	<div class="ab">
+  		<img src="old1.jpeg" id="figold">
+  	</div>
 
-
+  	<div class="ab1">
+        <img src="old2.jpeg" id="figold">
+    </div>
   	
-  </div>
+   </div>
+<br>
 <hr>
 <footer>
 
