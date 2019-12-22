@@ -151,3 +151,28 @@ id2:hover {
    
     transform: rotate(1deg);
 }
+.tittleani{
+  position: relative;
+  font-family: Georgia;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg,black,#8B0000,#8B0000,#FF4500,#DAA520,#8B0000, black);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 20s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+  text-align: center;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
