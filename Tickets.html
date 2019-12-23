@@ -44,8 +44,8 @@ $(document).ready(function(){
 	   <section class="faqja" >
        <nav id="mainMenu">
       <div class="h6">
-       <p id="fresh"><b><big>M</big>ANCHESTER<big>U</big>NITED</b></p>
-       <p id="minfont">The best team!</p>
+       <p id="fresh"><b><big>F</big>RESH<big>L</big>OOK</b></p>
+       <p id="minfont">free PSD Website Teplate</p>
       
        </div>
        <div >
@@ -56,8 +56,8 @@ $(document).ready(function(){
 
                        <ul>
                             <li><a href="Faqja1.html" >HOMEPAGE</a></li>
-                            <li><a href="pjesa2.html">PLAYERS</a>  </li>
-                            <li> <a href="Historyandcuriosities.html">HISTORY AND CURIOSITIES</a> </li>
+                            <li><a href="pjesa2.html">STYLE DEMO</a>  </li>
+                            <li> <a href="#">FULL WIDTH</a> </li>
                             <li>  <a href="#">PORTOFOLIO</a></li>
                             <li> <a href="#">GALLERY</a> </li>
                             <li> <a href="#">DROPDOWN</a> </li>
@@ -88,35 +88,60 @@ $(document).ready(function(){
 <br/>
 </div>
 
-<table id="customers">
-  <tr>
-    <th>JANAR 2020</th>
-  </tr>
-  <tr>
-    <td>Wed 01 Jan | English Premier League</td>
-  </tr>
-  <tr>
-    <td> <p>manutd  <img src="mmm.png" alt="Trulli" id="man" style="width:30px; height: 30px; border-radius:50%; " >
-      <button id="butoni2" onclick="myFunction()">15:00</button><p id="demo"></p>
-<img src="mmm.png" alt="Trulli" id="man" style="width:30px; height: 30px; border-radius:50%; " >manutd
-</p>
-     
-    </td>
-  </tr>
-  <tr>
-    <td>Sat 04 Janplanned match | English FA Cup</td>
-  </tr>
-  <tr>
-    <td>Tue 07 Janplanned match | English League Cup</td>
-  </tr>
-  <tr>
-    <td>Tue 07 Janplanned match | English League Cup</td>
-  </tr>
-  <tr>
-    <td>Tue 07 Janplanned match | English League Cup</td>
-  </tr>
+<button type="button" class="collapsible">Wed 01 Jan | English Premier League</button>
+<div class="content">
+  <p>
+    <div>
+      <p id="text2">manutd<img class="img-valign" src="mmm.jpg" alt="" />
+        <button id="ora" onclick="myFunction()">15:00</button>
+        <img class="img-valign" src="mmm.jpg" alt=""/>manutd </p>
+        <p id="demo"></p>
+      
+    </div>
+   </p>
+</div>
+<button type="button" class="collapsible">Sat 04 Jan | English FA Cup</button>
+<div class="content">
+  <p>
+    <div>
+      <p id="text2">manutd<img class="img-valign" src="mmm.jpg" alt="" />
+        <button id="ora" onclick="myFunction()">15:00</button> 
+        <img class="img-valign1" src="mmm.jpg" alt=""/>manutd </p>
+        <p id="demo"></p>
+      
+    </div>
+  </p>
+</div>
+<button type="button" class="collapsible">Tue 07 Jan | English League Cup</button>
+<div class="content">
+  <p>
+    <div>
+      <p id="text2">manutd<img class="img-valign" src="mmm.jpg" alt="" />
+        <button id="ora" onclick="myFunction()">15:00</button>
+        <img class="img-valign" src="mmm.jpg" alt=""/>manutd </p>
+        <p id="demo"></p>
+      
+    </div>
+  </p>
+</div>
 
-</table>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 <p id="text">There are two ways to buy tickets for Premier League home games at Old Trafford. 
   Match tickets will be sold exclusively to Official Members.
   Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.</p>
@@ -205,9 +230,14 @@ $(document).ready(function(){
     </div>
 		<br>
     <br>
-   
+    
+    
 
 </footer>
+	
+
+
+
 
 </body>
 </html>
