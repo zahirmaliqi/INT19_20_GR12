@@ -147,10 +147,10 @@ body{
   margin-left: 20px
 
 }
-id2:hover {
+.id2:hover {
    
     transform: rotate(1deg);
-}
+  }
 .tittleani{
   position: relative;
   font-family: Georgia;
