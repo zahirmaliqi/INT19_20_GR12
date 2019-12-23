@@ -61,7 +61,7 @@ h1 {
     width: 100%;
   }
 }
-img:hover {
+#img:hover {
  
   animation: shake 2s;
 
@@ -109,4 +109,17 @@ box-shadow: 2px 2px 4px 0px #006773;
 -moz-border-radius:7px 7px 7px 7px ;
 -webkit-border-radius:7px 7px 7px 7px ;
 border-radius:7px 7px 7px 7px ;
+}
+
+#img2:hover, #img2:focus{
+	-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.02);
+-moz-transform: scale(1.02);
+transform: scale(1.02);
+}
+h3:hover{
+	transform:scale(1.02);
+	color:red;
 }
