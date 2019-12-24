@@ -112,7 +112,6 @@ body{
   background:-webkit-linear-gradient(left,#8B0000,black,black); 
 }
 .fontshadow{
-  color: white;
   text-shadow: 4px 4px 4px red;
 }
 #figold{
