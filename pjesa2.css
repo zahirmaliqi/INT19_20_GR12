@@ -175,3 +175,39 @@ body{
     background-position: 500%;
   }
 }
+.fc{
+float:left;
+margin-right:0.20in;
+margin-left:0.20in;
+border: solid 1px #D1D1D1;
+padding: 0.25em ; 
+ height:240px; 
+ width:240px;
+ border-radius:0;
+}
+.htx{
+text-align:left;
+line-height:1.4em;
+font-family:"Times New Roman","Courier New",sans-serif;
+color:gray;
+width:98%;
+word-wrap:break-word;
+
+}
+
+.rt1
+{
+  font-size: 20px;
+  font-family: Georgia;
+  text-align: center;
+  
+
+}
+
+.krye{
+  font-size: 20.5px;
+  border-style: solid;
+  border-color: red;
+  background-color: black;
+  color: #787878;
+}
