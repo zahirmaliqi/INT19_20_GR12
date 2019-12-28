@@ -279,3 +279,19 @@ word-wrap:break-word;
      left: 60%;
      
    }
+.btnbuy{
+    border-radius:15px;
+      color:white;
+      font-size:15px;
+      padding: 5px 15px;
+      background:#FFA500;
+      width:150px;
+      position: absolute;
+     transform: translate(-50%, -50%);
+     border-color: black;
+     margin-left: 48%;
+  }
+  .btnbuy:hover{
+    background-color: #800000;
+  }
+
