@@ -2,6 +2,13 @@
       animation: colorchange 10s; 
       -webkit-animation: colorchange 10s; 
     }
+@keyframes colorchange
+    {
+      0%   {background: -webkit-linear-gradient(right,black,black,#696969);;}
+      50%  {background: black;}
+      100%  {background: black;}
+      
+    }
 
 .con {
   position: relative;
