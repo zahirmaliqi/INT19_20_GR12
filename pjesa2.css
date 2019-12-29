@@ -1,6 +1,7 @@
-body{
-	background-color: black;
-}
+ body {
+      animation: colorchange 10s; 
+      -webkit-animation: colorchange 10s; 
+    }
 
 .con {
   position: relative;
