@@ -10,6 +10,22 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
 <title>History and curiosities</title>
+	
+<style>
+#button1{
+margin:0;
+height:1.5em;
+width:10em;
+ padding:0;
+}
+.grid-container {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-gap: 10px;
+ 
+}
+
+</style>	
 </head>
 <body>
 <header style="width: 102%">
@@ -159,15 +175,43 @@ As the Luis van, Gaal becomes the first non Britisher manager of the red devils.
   Manchester United and Champions - United - We Love You
 </audio>
 
-</div>
 
-
+<div class="grid-container">
+<div>
 <p>Here are some links for more curiosities:</p>
 
 
 <a href="https://www.sportskeeda.com/football/five-amazing-facts-probably-wouldn-t-know-manchester-united"target="_blank" >Sportskeeda</a><br>
 <a href="https://www.fourfourtwo.com/features/why-juan-matas-decline-a-sign-times-manchester-united"target="_blank" >FourFourTwo</a><br>
-<a href="https://thebusbyway.com/2012/09/10/10-interesting-facts-about-man-united/"target="_blank" >The Busby Way</a><br>		   
+<a href="https://thebusbyway.com/2012/09/10/10-interesting-facts-about-man-united/"target="_blank" >The Busby Way</a><br>
+</div>
+<div>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()" id="button1">Get your coordinates</button>
+
+<p id="lokacioni"></p>
+</div>
+
+
+</div>
+<script>
+var x = document.getElementById("lokacioni");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+		   </div>
 </section>
  <footer>
 
