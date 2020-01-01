@@ -123,3 +123,18 @@ h3:hover{
 	transform:scale(1.02);
 	color:red;
 }
+
+#div1{
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+ #div2{
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
