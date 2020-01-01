@@ -9,7 +9,7 @@
     <body>
     <div class="tiketa">
         <form>
-        <h3 style="color: #fff;">You need to Buy Tickets?</h3>
+        <h3 style="color: #fff;">You need to Buy Tickets or T-shirt?</h3>
         <h7 style="color:white">Fill the details below accurately and we will contact you soon.</h7>
             <input type="text" name="username" placeholder=" Name">
             <br><br>
@@ -20,24 +20,28 @@
            <input type="password" name="code"
                    placeholder="Your code"><br><br>
             <input type="text" name="email" placeholder="Email address"><br><br>
-            <input type="checkbox" name="vehicle1" value="Bike"> I accept terms and condition.<br>
+              <input type="checkbox" name="vehicle1" value="Bike"> I accept terms and condition.<br><br>
+              <select class="sty">
+  <option value="Select">Select:</option>
+  <option value="T-Shirt">T-Shirt</option>
+  <option value="Ticket">Ticket</option>
+ 
+               </select>
+               <br>
+         
         </br>
-            <input type="button" value="BUY TICKET" onclick="myFunction()"/><br><br>
+         
+            <input type="submit" value="BUY NOW" onclick="myFunction()"/><br><br>
             
             <script>
-            function myFunction(){
-                var x = document.getElementById("msg");
-                x.className="show";
-                setTimeout(function(){x.className=
-                x.className.replace("show","");},3000);}
-                           
-            
-            
+                function myFunction() {
+                alert("Are all requirements fulfilled?");
+                                       }
             </script>
             
         </form>
         </div>
-    
+     
     
     
     </body>
