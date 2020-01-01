@@ -175,6 +175,22 @@ As the Luis van, Gaal becomes the first non Britisher manager of the red devils.
   Manchester United and Champions - United - We Love You
 </audio>
 
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+ ev.target.appendChild(document.getElementById(data));
+}
+</script>
+		
 
 <div class="grid-container">
 <div>
@@ -186,14 +202,26 @@ As the Luis van, Gaal becomes the first non Britisher manager of the red devils.
 <a href="https://thebusbyway.com/2012/09/10/10-interesting-facts-about-man-united/"target="_blank" >The Busby Way</a><br>
 </div>
 <div>
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Players.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="300px" height="200px" />
+</div>
+
+
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</div>
+
+
+<div>
 <p>Click the button to get your coordinates.</p>
 
 <button onclick="getLocation()" id="button1">Get your coordinates</button>
 
 <p id="lokacioni"></p>
-</div>
-
-
 </div>
 <script>
 var x = document.getElementById("lokacioni");
