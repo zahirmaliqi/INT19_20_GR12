@@ -11,22 +11,22 @@ width: 100%;
 }
 .text {
     font-family: "Times New Roman", Georgia, serif;
-  padding: 8px 12px;
+  padding: 8px 8px;
   position: relative;
-  bottom: 35px;
+  bottom: 55px;
   width: 100%;
   text-align: center;
-  background: rgba(31, 30, 30, 0);
-  font-size: 4vw;
+  background:black;
+  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   line-height: 1;
-  padding: 0;
   margin: 0;
   color: white;
   text-shadow: 0 0 3px #FF0000;
+  opacity: 0.95;
   
 }
 .dot {
