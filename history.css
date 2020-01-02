@@ -138,3 +138,16 @@ h3:hover{
   padding: 10px;
   border: 1px solid black;
 }
+
+#button1{
+margin:0;
+height:1.5em;
+width:10em;
+ padding:0;
+}
+.grid-container {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-gap: 10px;
+ 
+}
