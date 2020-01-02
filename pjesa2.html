@@ -10,11 +10,7 @@
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("button").click(function() {
-    $("#Hide").toggle();
-  });
-});
+
   $(document).ready(function(){
   $(".fontshadow").css("color", "#FFA500");
 });
@@ -129,17 +125,7 @@ $(document).ready(function(){
 	  <address  class="fontshadow"><b>Address:<b>Sir Matt Busby Way, Stretford, Manchester M16 0RA, United Kingdom</address></p>
   </div>
   </div>
-<div><button class="bttn" >Hide or unhide</button></div>
-  <div class="row1" id="Hide">
-  	<div class="ab">
-  		<img src="old1.jpeg" id="figold">
-  	</div>
 
-  	<div class="ab1">
-        <img src="old2.jpeg" id="figold">
-    </div>
-  	
-   </div>
 <br>
 			<div class="krye">
 	<p class="htx">
@@ -174,6 +160,67 @@ Sorry, your browser does not support inline SVG.
 			and stewards to search any individual, clothing and other items in their possession, without exception.
 </p>
 </div>
+<br>
+<div class="row1">
+<div >
+  	<div class="ab">
+  		<img src="old1.jpeg" id="figold">
+  	</div>
+<br>
+  	<div class="ab1">
+        <img src="old2.jpeg" id="figold">
+    </div>
+  	
+   </div>
+<div style="text-align:center"> 
+  <button class="videobttn" onclick="playPause();clickCounter() ">Play/Pause</button> 
+  <button class="videobttn" onclick="makeBig()">Big</button>
+  <button class="videobttn" onclick="makeSmall()">Small</button>
+  <button class="videobttn" onclick="makeNormal()">Normal</button>
+  <br><br>
+  <div id="result" style="color: white; font-size: 11.5px;"></div>
+  <video id="video1" width="680" >
+    <source src="red.mp4" type="video/mp4">
+    <source src="red.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+</div>
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 700; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 550; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 680; 
+} 
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button Play/Pause " + sessionStorage.clickcount + " time(s) in this session.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script> 
 <br>
 	<div class="bstyle" class="ch1" >
 	<button type="button"  class="up-btn" id="btn1">Slide Up </button>
