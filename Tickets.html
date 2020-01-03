@@ -14,9 +14,17 @@
 $(document).ready(function(){
   $("button").click(function() {
     $("span").toggle();
+    
   });
 });
 </script>
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+    });
+  });
+  </script>
 </head>
 <header style="width: 100%">
 
@@ -65,40 +73,51 @@ $(document).ready(function(){
           </nav>
 
 <body >
+
+
   <script>
     function myFunction() {
-      document.getElementById("demo").innerHTML = " Vicarage Road";
-      document.getElementById("demo").innerHTML = " Vicarage Road";
-      document.getElementById("demo").innerHTML = " Vicarage Road";
+      document.getElementById("demo1").innerHTML = "Vicarage Road";
+      document.getElementById("demo2").innerHTML = "Vicarage Road ";
+      document.getElementById("demo3").innerHTML = "Vicarage Road";
     }
     </script> 
  
   <div class="w3-container">
  
-
-    <div class="w3-display-container w3-text-white">
-      <img src="download.jpg" alt="Lights" style="width:100%">
+      <img src="ekipii.jpg" alt="Lights" style="width:100%;">
     
 
   </div>
 
 <div class="bg-text">
  
-  <h1 style="font-size:70px">TICKETS AND HOSPITALITY</h1>
+  <h1 style="font-size:70px;text-shadow: inherit;">FIXTURES AND TICKETS</h1>
  
 </div>
 <br/>
 </div>
-
-
+<h2 style="font-size:30px;text-align:center;color:crimson;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-shadow: darkkhaki;">JANAR 2020</h2>
 <button type="button" class="collapsible">Wed 01 Jan | English Premier League</button>
 <div class="content">
   <p>
     <div >
-      <p id="text2">manutd<img class="img-valign" src="mmm.jpg" alt="" />
-        <button id="ora" onclick="myFunction()">15:00</button>
-        <img class="img-valign" src="mmm.jpg" alt=""/>manutd </p>
-        <p id="demo1"></p>
+      <p id="text2"style="font-size:25px;font-family:Arena;color:white;">MAN UTD<img class="img-valign" src="mmm.jpg" alt="" />
+        <button id="ora" onclick="myFunction()">13:00</button>
+        <img class="img-valign" src="milan.png" alt=""/>INTER MILAN </p>
+        <p id="demo1" style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
+      
+    </div>
+   </p>
+</div>
+<button type="button" class="collapsible">Wed 01 Jan | English Premier League</button>
+<div class="content">
+  <p>
+    <div >
+      <p id="text2"style="font-size:25px;font-family:Arena;color:white;">MAN UTD<img class="img-valign" src="mmm.jpg" alt="" />
+        <button id="ora" onclick="myFunction()">17:00</button>
+        <img class="img-valign" src="milan.png" alt=""/>INTER MILAN</p>
+        <p id="demo1" style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
       
     </div>
    </p>
@@ -107,10 +126,10 @@ $(document).ready(function(){
 <div class="content">
   <p>
     <div>
-      <p id="text2">manutd<img class="img-valign" src="mmm.jpg" alt="" />
-        <button id="ora" onclick="myFunction()">15:00</button> 
-        <img class="img-valign" src="mmm.jpg" alt=""/>manutd </p>
-        <p id="demo2"></p>
+      <p id="text2"style="font-size:25px;font-family:Arena;color:white;">CHELSEA<img class="img-valign" src="chelsea.png" alt="" />
+        <button id="ora" onclick="myFunction()">18:00</button> 
+        <img class="img-valign" src="mmm.jpg" alt=""/>MAN UTD </p>
+        <p id="demo2"style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
       
     </div>
   </p>
@@ -118,35 +137,125 @@ $(document).ready(function(){
 <button type="button" class="collapsible">Tue 07 Jan | English League Cup</button>
 <div class="content">
   <p>
+  
     <div>
-      <p id="text2">manutd<img class="img-valign" src="mmm.jpg" alt="" />
-        <button id="ora" onclick="myFunction()">15:00</button>
-        <img class="img-valign" src="mmm.jpg" alt=""/>manutd </p>
-        <p id="demo"></p>
+      <p id="text2"style="font-size:25px;font-family:Arena;color:white;">MAN UTD<img class="img-valign" src="mmm.jpg" alt="" />
+        <button id="ora" onclick="myFunction()">20:00</button>
+        <img class="img-valign" src="fcb.png" alt=""/>FCB BARCELONA </p>
+        <p id="demo3"style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
       
     </div>
   </p>
+    <p>
+      <div >
+        <p id="text2"style="font-size:25px;font-family:Arena;color:white;">CHELSEA<img class="img-valign" src="chelsea.png" alt="" />
+          <button id="ora" onclick="myFunction()">21:00</button>
+          <img class="img-valign" src="mmm.jpg" alt=""/>MAN UTD </p>
+          <p id="demo1" style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
+        
+      </div>
+     </p>
+     <p>
+      <div >
+        <p id="text2"style="font-size:25px;font-family:Arena;color:white;">MAN UTD<img class="img-valign" src="mmm.jpg" alt="" />
+          <button id="ora" onclick="myFunction()">15:00</button>
+          <img class="img-valign" src="westhamunited.png" alt=""/>WESTHAM UNITED </p>
+          <p id="demo1" style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
+        
+      </div>
+     </p>
+     <p>
+      <div >
+        <p id="text2"style="font-size:25px;font-family:Arena;color:white;">MAN UTD<img class="img-valign" src="mmm.jpg" alt="" />
+          <button id="ora" onclick="myFunction()">22:00</button>
+          <img class="img-valign" src="milan.png" alt=""/>INTER MILAN </p>
+          <p id="demo1" style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
+        
+      </div>
+     </p><p>
+      <div >
+        <p id="text2"style="font-size:25px;font-family:Arena;color:white;">CHELSEA<img class="img-valign" src="chelsea.png" alt="" />
+          <button id="ora" onclick="myFunction()">15:00</button>
+          <img class="img-valign" src="mmm.jpg" alt=""/>MAN UTD </p>
+          <p id="demo1" style="text-align: center;color:rgb(216, 37, 127);font-family: Arial, Helvetica, sans-serif;font-size: 20px;"></p>
+        
+      </div>
+     </p>
+  </div>
+  
 </div>
+
+
+
+<div class="mySlides" style="float:right;width:400px;height:200px;padding:25px">
+  <a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuA9EqZf3ASc56Lgm8UaKF9G7wv6EMH2TrbSV9N_IqkixiOvzE9CBfVPLkQMGAh_PEefVDyDggmOfCq3vroAV9HfUZg70tblYr61I3qCIGfJQBj2IaItfUWqr6qkmNRjDN6V9K1mfpJJvxrPocbwCvg_4bbtQ4UjE2b0yF8QyVQYYvFw8kHOEozk_AElrvG5UBfCG5BonbL_3zFAh_u2Z3MYTv6TkDQtPFdmPU0qDliJe8JAps3fXqKGwICgV1M0UTPfxjv&sai=AMfl-YRHolWXXpIT2pPcK7x7LNGWT90QfQ-LyRbefLXf4tJcIijMAZdbqPHbrmBez-6Iw9TLiH8kSaWJ2kwGl4ogL1jqlw5WmxveRLCZDMn75D4pD2wET1TVe4qW-jLJQtBMBPmz&sig=Cg0ArKJSzNqD46CvdEMD&adurl=https://www.youtube.com/manutd%3Ft%3Dy%26utm_source%3Dmuwebsite%26utm_medium%3Dad_banner%26utm_campaign%3Dyoutube%26utm_content%3Dlaunchbanners%26sub_confirmation%3D1&nx=CLICK_X&ny=CLICK_Y">
+  <img src="youtube.gif" style="width:100%;border-radius: 50%;"> 
+  </a>
+</div>
+
+<div class="mySlides"style="float:right;width:400px;height:200px;padding:25px" >
+  <a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuA9EqZf3ASc56Lgm8UaKF9G7wv6EMH2TrbSV9N_IqkixiOvzE9CBfVPLkQMGAh_PEefVDyDggmOfCq3vroAV9HfUZg70tblYr61I3qCIGfJQBj2IaItfUWqr6qkmNRjDN6V9K1mfpJJvxrPocbwCvg_4bbtQ4UjE2b0yF8QyVQYYvFw8kHOEozk_AElrvG5UBfCG5BonbL_3zFAh_u2Z3MYTv6TkDQtPFdmPU0qDliJe8JAps3fXqKGwICgV1M0UTPfxjv&sai=AMfl-YRHolWXXpIT2pPcK7x7LNGWT90QfQ-LyRbefLXf4tJcIijMAZdbqPHbrmBez-6Iw9TLiH8kSaWJ2kwGl4ogL1jqlw5WmxveRLCZDMn75D4pD2wET1TVe4qW-jLJQtBMBPmz&sig=Cg0ArKJSzNqD46CvdEMD&adurl=https://www.youtube.com/manutd%3Ft%3Dy%26utm_source%3Dmuwebsite%26utm_medium%3Dad_banner%26utm_campaign%3Dyoutube%26utm_content%3Dlaunchbanners%26sub_confirmation%3D1&nx=CLICK_X&ny=CLICK_Y">
+  <img src="lala.jpg" style="width:100%;border-radius: 50%;">
+  </a>
+
+</div>
+<div class="mySlides"style="float:right;width:400px;height:200px;padding:25px" >
+  <a href="https://googleads.g.doubleclick.net/pcs/click?xai=AKAOjsuA9EqZf3ASc56Lgm8UaKF9G7wv6EMH2TrbSV9N_IqkixiOvzE9CBfVPLkQMGAh_PEefVDyDggmOfCq3vroAV9HfUZg70tblYr61I3qCIGfJQBj2IaItfUWqr6qkmNRjDN6V9K1mfpJJvxrPocbwCvg_4bbtQ4UjE2b0yF8QyVQYYvFw8kHOEozk_AElrvG5UBfCG5BonbL_3zFAh_u2Z3MYTv6TkDQtPFdmPU0qDliJe8JAps3fXqKGwICgV1M0UTPfxjv&sai=AMfl-YRHolWXXpIT2pPcK7x7LNGWT90QfQ-LyRbefLXf4tJcIijMAZdbqPHbrmBez-6Iw9TLiH8kSaWJ2kwGl4ogL1jqlw5WmxveRLCZDMn75D4pD2wET1TVe4qW-jLJQtBMBPmz&sig=Cg0ArKJSzNqD46CvdEMD&adurl=https://www.youtube.com/manutd%3Ft%3Dy%26utm_source%3Dmuwebsite%26utm_medium%3Dad_banner%26utm_campaign%3Dyoutube%26utm_content%3Dlaunchbanners%26sub_confirmation%3D1&nx=CLICK_X&ny=CLICK_Y">
+  <img src="mali.jpg" style="width:100%;border-radius: 50%;">
+  </a>
+
+</div>
+
+<div >
+  <span class="dot1"></span> 
+  <span class="dot1"></span> 
+  <span class="dot1"></span> 
+</div>
+
+
+<script>
+var slideIndex = 0;
+show();
+
+function show() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot1");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(show, 2000); 
+}
+</script>
 <div id="box">
+  <img src="uefa.png" style=" width:100px; height:100px;position:relative ;padding-left:110px; ">
+  <p style="text-align:center;font-size: 15px;color:green">GROUP  L</p>
   <table id="customers">
     <tr>
-      <td >Pos	 Team    P 	   W	   Pts</td>
+      <td >Pos	 Team    P 	   W	    Pts</td>
     
     </tr>
     <tr>
-      <td>1	Liverpool	17	16	49</td>
+      <td style="color:chartreuse" >1	Man Utd	6	4	13</td>
       
     </tr>
     <tr>
-      <td>2	Leicester	18	12	39</td>
+      <td>2	Arizona 	6 	2 	9</td>
      
     </tr>
-    <tr>
-      <td>8	Man Utd	18	6	25</td>
+    <tr> 
+      <td>3	Partizan	6	2	8</td>
       
     </tr>
     <tr>
-      <td>3	Man City	18	12	38</td>
+      <td>4	FC Astana	6	1	3</td>
      
     </tr>
   </table>
@@ -155,6 +264,8 @@ $(document).ready(function(){
 <hr id="hr2">
 
   </div>
+
+  
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -168,31 +279,89 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.display = "block";
     }
-  });
+  }); 
 }
 </script>
 
+
 <p id="text">There are two ways to buy tickets for Premier League home games at Old Trafford. 
-  Match tickets will be sold exclusively to Official Members.
+ 
   Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.</p>
   <br/>
   
-  <button type="button">BUY TICKETS <small>&#8594 </small></button>
-<button id="butoni1" type="button"> BUY MATCHDAY VIP<small>&#8594 </small></button>
+  <button type="button"style="float:right;" >BUY TICKETS <small>&#8594 </small>
+  </button>
+<button id="butoni1" type="button" style="float:right;float:50px top;"> BUY MATCHDAY VIP<small>&#8594 </small></button>
+<div id="box">
+  <img src="premier1.png" style=" width:100px; height:100px;position:relative ;padding-left:110px; ">
+  <p style="text-align:center;font-size: 15px;color:green">PREMIER LEAGUE</p>
+  <table id="customers">
+    <tr>
+      <td >Pos	 Team    P 	   W	   Pts</td>
+    
+    </tr>
+    <tr>
+      <td style="color:chartreuse" >1	MAN UTD 17	16	49</td>
+      
+    </tr>
+    <tr>
+      <td>2	Leicester	18	12	39</td>
+     
+    </tr>
+    <tr>
+      <td>8	Liverpool	18	6	25</td>
+      
+    </tr>
+    <tr>
+      <td>3	Man City	18	12	38</td>
+     
+    </tr>
+  </table>
+  
+  <button id="viewall" type="button"><a  href="https://www.manutd.com/en/matches/first-team/2019-20/premier-league/league-table">VIEW ALL&raquo;</a></button>
 <hr id="hr2">
 
+  </div>
 
+
+<br/>
+<br/>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">HISTORY</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="https://www.manutd.com/en/matches/first-team/2018-19/all">2018-2019</a>
+      <a href="#https://www.manutd.com/en/matches/first-team/2017-18/all">2017-2018</a>
+      <a href="https://www.manutd.com/en/matches/first-team/2016-17/all">2016-2017</a>
+    </div>
+  </div>
+  
+  <script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show1");
+  }
+  
+ 
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show1')) {
+          openDropdown.classList.remove('show1');
+        }
+      }
+    }
+  }
+  </script>
 
   
 
-  
 
 
 
 
-
-
-
+<hr id="hr2">
 <footer>
 
 	<div >
