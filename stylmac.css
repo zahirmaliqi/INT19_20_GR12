@@ -1,3 +1,11 @@
+ .ekipet ul li  {
+  padding: 10px;
+    list-style-type: none;
+    display: inline;
+    text-decoration-line: underline;
+    font-size: 20px;
+    
+}
 #klasa1 {
     color: rgb(0, 0, 0);
     
