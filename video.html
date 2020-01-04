@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="video.css">
+</head>
+<body>
+
+    <div style="text-align:center"> 
+        <button class="video" onclick="playPause();clickCounter() ">Play/Pause</button> 
+        <button class="video" onclick="makeBig()">Big</button>
+        <button class="video" onclick="makeSmall()">Small</button>
+        <button class="video" onclick="makeNormal()">Normal</button>
+        <br><br>
+        <div id="result" style="color: rgb(233, 81, 81); font-size: 11.5px;"></div>
+        <video id="vloragj" width="1000" >
+          <source src="united1.mp4" type="video/mp4">
+        </video>
+      </div> 
+      </div>
+      
+      <script> 
+      var myVideo = document.getElementById("vloragj"); 
+      
+      function playPause() { 
+        if (myVideo.paused) 
+          myVideo.play(); 
+        else 
+          myVideo.pause(); 
+      } 
+      
+      function makeBig() { 
+          myVideo.width = 1200; 
+      } 
+      
+      function makeSmall() { 
+          myVideo.width = 700; 
+      } 
+      
+      function makeNormal() { 
+          myVideo.width = 1000; 
+      } 
+      function clickCounter() {
+        if(typeof(Storage) !== "undefined") {
+          if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+          } else {
+            sessionStorage.clickcount = 1;
+          }
+          document.getElementById("result").innerHTML = "You have clicked the button Play/Pause " + sessionStorage.clickcount + " time(s) in this session.";
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+      }
+      </script> 
+    
+</body>
+</html>
