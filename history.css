@@ -151,3 +151,41 @@ width:10em;
   grid-gap: 10px;
  
 }
+
+#link1{
+	color:red;
+}
+
+#link1:hover
+{
+	cursor:pointer;
+	color:black;
+	background-color:white;
+	font-style:italic;
+}
+
+#link2{
+	color:#FB876E;
+}
+
+
+#link2:hover
+{
+	cursor:pointer;
+	color:purple;
+	background-color:white;
+	font-style:italic;
+}
+
+#link3{
+	color:#DC0C41;
+}
+#link3:hover
+{
+	cursor:pointer;
+	color:#544146;
+	background-color:white;
+	font-style:italic;
+}
+
+
