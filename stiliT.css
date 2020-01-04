@@ -71,14 +71,16 @@ body, html {
   }
   #text{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     color:#ffff;
     text-align: center;
     float:bottom;
+    font-style: oblique;
+    
 }
     
 
-  button{
+  #button1{
 
   
         border: 1px solid;
@@ -86,15 +88,12 @@ body, html {
         color: white;
         background-color:#800000;
         padding: 0.5em 0 0.5em 0;
-        margin-bottom:1.5em;
-        margin-top:-17em;
-        margin-left:15em;
-        margin-right:24em;
         width: 15em;
         height:2.3em;
         cursor:pointer;
         font-size:20px;
         font-family:"Times New Roman","Courier New",sans-serif;
+      
         }
         #butoni1{
             border: 1px solid;
@@ -102,15 +101,13 @@ body, html {
             color: rgb(235, 11, 11);
             background-color:#fdf9f9;
             padding: 0.5em 0 0.5em 0;
-            margin-bottom:1.5em;
-            margin-top:-12em;
-            margin-left:15em;
-            margin-right:24em;
             width: 15em;
             height:2.3em;
             cursor:pointer;
             font-size:20px;
             font-family:"Times New Roman","Courier New",sans-serif;
+            position: relative;
+            margin-right: 30px;
 
         }
     #ora{
@@ -154,11 +151,6 @@ body, html {
 
     }
     
-    .text2 {
-      font-size: 12px;
-      color:black;
-      position:absolute;
-    }
     #customers {
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
       border-collapse: collapse;
@@ -166,7 +158,7 @@ body, html {
     }
     
     #customers td {
-      border: 1px solid #ddd;
+      border: 1px solid rgb(170, 168, 59);
       padding: 8px;
       color:red;
       font-size: 20px;
@@ -174,7 +166,7 @@ body, html {
       position:relative;
     }
     
-    #customers tr:hover {background-color: #ddd;}
+    #customers tr:hover {background-color: rgb(166, 168, 29);}
     
     #box {
       float: left;
@@ -200,11 +192,7 @@ body, html {
       font-size:20px;
       font-family:"Times New Roman","Courier New",sans-serif;
       }
-      .show {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-      }
+     
       
       .fade {
         -webkit-animation-name: fade;
@@ -212,72 +200,68 @@ body, html {
         animation-name: fade;
         animation-duration: 1.5s;
       }
-      .janar{
-        font-size:30px;
-        text-align:center;
-        color:crimson;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-shadow: darkkhaki;
+     
+      #you
+      {
+        width:600px;
+        height:400px;
+        float: right;
+      }
+      
+      #panel, #flip {
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+        color: #7ecc5a;
+        background-color: #ce447ede;
+        border: solid 1px #b3f548;
+        border-radius: 15px;
+      }
+      
+      #panel {
+        padding: 50px;
+        display: none;
       }
      
-      .dropbtn {
-        background-color: rgb(173, 68, 68);
-        color: rgb(231, 9, 9);
-        padding: 0px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        margin:none;
+  
+    article {
+        width:200px;
+        height:200px;
+        float:left;
+        margin:10px;
+        color:#FFF;
         
-        
-      }
+    }
+    .web {
+        background:green
+    }
+    .misc {
+        background:blue
+    }
+    .graphic figure{
+        width:100%;
+        height:100%;
+        margin:0;
+        background:#FFF;
+    }
+    .graphic figcaption{
+        background:#F00;
+        color:#FFF;
+        width:100%;
+        height:20%;
+        text-align:center;
+        padding:5px;
+    }
+    .graphic img {
+        width:100%;
+        height:80%;
+    }
+    .web img, .misc img {
+        background:#FFF;
+        width:100%;
+        height:40%;
+    }
       
-      .dropbtn:hover, .dropbtn:focus {
-        background-color: rgb(214, 165, 74);
-        
-      }
-      
-      .dropdown {
-        position: relative;
-        right:-700px;
-        top:-150px;
-        display: inline-block;
-        
-    
-      
-        
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #c5a53d;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        margin-right: 20px;
-        top:50px;
-        
-      
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display:block;
-        
-        
-        
-      }
-      
-      .dropdown a:hover {background-color: #ddd;}
-      
-      .show1 {
-          display: inline-block;
-          
-      }
     
    
    
