@@ -187,5 +187,7 @@ width:10em;
 	background-color:white;
 	font-style:italic;
 }
-
+article{
+	display:block;
+}
 
