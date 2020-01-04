@@ -14,10 +14,6 @@
       -webkit-animation: colorchange2 10s; 
     }
 
-
-
-
-
 @keyframes colorchange
     {
       0%   {background: -webkit-linear-gradient(right,pink,black,black,#696969);;}
@@ -246,10 +242,13 @@ word-wrap:break-word;
 
 .krye{
   font-size: 20.5px;
-  border-style: solid;
-  border-color: red;
   background-color: black;
   color: #787878;
+  margin: 20px;
+  border: 1px solid #D2691E;
+  outline: 2px solid #8B0000;
+  outline-offset: 6px;
+  
 }
 .f1{
   column-count:6;
