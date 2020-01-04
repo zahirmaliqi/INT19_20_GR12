@@ -1,0 +1,31 @@
+body
+{
+   font-family:  Tahoma,Geneva,sans-serif;
+    color: #fff;
+    background: url(video.jpg);
+    background-size: cover;
+    
+}.bttn{
+    border-radius:15px;
+    color:white;
+    font-size:15px;
+    padding: 5px 15px;
+    background:url(only.jpeg);
+    width:300px;
+    float: right;
+    position: absolute;
+   top: 310.5%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-color: rgb(124, 4, 4);
+   margin-top: 2.5%;
+
+}
+    .video{
+        width:80px;
+        height:40px;
+        background-color: rgba(133, 65, 197, 0.76);
+        border-radius: 8px;
+        
+
+    }
