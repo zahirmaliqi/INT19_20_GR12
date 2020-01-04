@@ -248,6 +248,7 @@ word-wrap:break-word;
   border: 1px solid #D2691E;
   outline: 2px solid #8B0000;
   outline-offset: 6px;
+  resize: both;
   
 }
 .f1{
