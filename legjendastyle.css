@@ -1,0 +1,46 @@
+
+.button19{margin-left: 675px;
+  background-color: rgb(231, 209, 209);
+  width: 230px;
+   height: 230px;
+   margin-top:0px ;
+  border: 1px solid rgb(0, 0, 0);
+
+}
+
+#result{
+  color: white;margin-left: 700px;
+}
+
+.trans{color:white;
+  font-size:30px;
+  margin-left: 700px;
+
+}
+
+
+.perkthimi{
+
+  margin-left:730px;
+  margin-bottom:5px ;
+  background-color: white;
+  color:black;
+      width: 100px; 
+      height: 40px;
+}
+.grid-container {  
+        display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+  .grid-item {
+     padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .grid-container .grid-item p {
+    color:white;
+  }
+
