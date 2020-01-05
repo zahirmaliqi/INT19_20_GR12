@@ -149,7 +149,14 @@
   <p class="fontshadow">Old Trafford Stadium is the world-famous home of Manchester United.
 	  So,Old Trafford is a football stadium in Old Trafford, Greater Manchester, England,
 	  and the home of Manchester United. With a capacity of 74,879, it is the largest club 
-	  football stadium in the United Kingdom, and the eleventh-largest in Europe. <abbr title=" Dialling 
+	  football stadium in the United Kingdom, and the eleventh-largest in Europe.
+	  <p id="text1" class="fontshadow">Manchester United have won more trophies 
+		  than any other club in English football, with a record 20 League titles :<span id="textRegEx"></span></p>
+<script>
+                 text = document.getElementById("text1").innerHTML; 
+                 document.getElementById("textRegEx").innerHTML = /20/.test(text);
+</script> 
+	  <abbr title=" Dialling 
 		  code "> D.C </abbr> :0161 <br>
 	  <address  class="fontshadow" id="replace">Address:Sir Matt Busby Way,
 		  Stretford, Manchester M16 0RA, United Kingdom<button class="videobttn"
