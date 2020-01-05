@@ -6,6 +6,9 @@
     font-size: 20px;
     
 }
+div{
+  box-sizing: border-box;
+}
 #klasa1 {
     color: rgb(0, 0, 0);
     
