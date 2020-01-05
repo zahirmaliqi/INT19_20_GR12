@@ -226,6 +226,25 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 </script>
+		
+<p>A test for "History" and "curiosity" in the string "History and curiosities":</p>
+
+<button id="button2" onclick="myFunction()">Test</button>
+
+<p id="test"></p>
+
+<script>
+function myFunction() {
+  var str = "History and curiosities";
+
+  var patt = /History/g;
+  var result = patt.exec(str);
+
+  var patt2 = /curiosity/g;
+  result2 = patt2.exec(str);
+  document.getElementById("test").innerHTML ="History: "+ result + "<br>" +"curiosity: "+ result2;
+}
+</script>
 		   </div>
 </section>
  <footer>
