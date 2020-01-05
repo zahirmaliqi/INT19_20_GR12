@@ -247,8 +247,8 @@ body, html {
     .graphic figcaption{
         background:rgb(208, 224, 231);
         color:#FFF;
-        width:100%;
-        height:20%;
+        width:10px;
+        height:3px;
         text-align:center;
         padding:5px;
     }
