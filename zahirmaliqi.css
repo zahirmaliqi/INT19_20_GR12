@@ -50,7 +50,7 @@ footer {
   }
   #submit:hover,a:hover
   {
-    background-color:black;
+    background-color:none;
   }
    hr{
     border:1px solid #404040;
