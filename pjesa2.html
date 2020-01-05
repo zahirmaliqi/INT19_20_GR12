@@ -306,8 +306,12 @@ function clickCounter() {
 		
 		<div class="bor" class="ch5">
 			<img src="u5.jpeg" class="allpic">
-			<p class="ctr1">&#36;89.99</p>
-			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas Paulo Scholesvi&#231;</a></p>
+			<p class="ctr1">&#36;<span id="mathfunk"></span></p>
+			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">
+				Adidas Paulo Scholesvi&#231;</a></p>
+			<script>
+             document.getElementById("mathfunk").innerHTML = Math.round(89.9);
+            </script>
 		</div>
 
 		<div class="bor" class="ch6">
