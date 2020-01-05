@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="example.appcache">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,7 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
 	<title>Document</title>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -21,19 +22,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>
-	var video = document.getElementById("myVideo");
-	var btn = document.getElementById("myBtn");
-	
-	function myFunction() {
-	  if (video.paused) {
-		video.play();
-		btn.innerHTML = "Pause";
-	  } else {
-		video.pause();
-		btn.innerHTML = "Play";
-	  }
-	}
+
 	</script>
     <script>
 		function clickCounter() {
@@ -90,10 +79,10 @@ $(document).ready(function(){
 
                        <ul>
                             <li><a href="Faqja1.html" >HOMEPAGE</a></li>
-                            <li> <a href="Historyandcuriosities.html">HISTORY AND CURIOSITIES</a> </li>
-			    <li><a href="pjesa2.html">PLAYERS</a>  </li>
-                            <li>  <a href="pic.html">GALLERY</a></li>
-                            <li> <a href="Tickets.html">FIXTURES</a> </li>
+                            <li><a href="#">PLAYERS</a>  </li>
+                            <li> <a href="#">FULL WIDTH</a> </li>
+                            <li>  <a href="#">PORTOFOLIO</a></li>
+                            <li> <a href="pic.html">GALLERY</a> </li>
                             <li> <a href="Game.html">GAME</a> </li>
                        </ul> 
           </nav>
@@ -176,10 +165,80 @@ document.getElementById("dem3").innerHTML = txt1 + " " + txt2;
 			like
 			</button></p>
 			<div id="result"></div>
+			<div class="biografia " style="color: white;font-size:20px"> 
+				<ol type="1">
+					<li><p id="demo6" style="color:white;font-size:30px"></p>
+					Ryan Giggs closed one chapter of his football career - the epic, decades-spanning story of him as a player - on the same day he started a new one, as Manchester United’s new assistant manager.</li>
+					<li>
+					<p id="demo7" style="color:white;font-size:30px"></p>
+					Nobody embodies the values of Manchester United better than Sir Bobby Charlton. Having survived the trauma of the Munich Air Disaster when aged just 20, he played as if every game was for his fallen colleagues,</li>
+					<li><p id="demo8" style="color:white;font-size:30px"></p>
+					You must have a rare and special football talent to impress the great Sir Bobby Charlton.</li>
+					<li> <p id="demo9"style="color:white;font-size:30px"></p>
+					Bill Foulkes will always be remembered as a loyal and legendary servant of Manchester United, after an epic playing career which spanned a remarkable 18 seasons. </li>
+				  </ol>  
+				  <script>
+				  
+				  function Person(first, last, age, eye) {
+					this.firstName = first;
+					this.lastName = last;
+					this.age = age;
+					}
+				  var myFather = new Person("Ryan", "Giggs", 46, "brown");
+				  
+				  
+				  document.getElementById("demo6").innerHTML =
+				  "Ryan Giggs is  " + myFather.age  ; 
+				  </script>
+				  
+				  <script>
+				  
+				  function Person(first, last, age, eye) {
+					this.firstName = first;
+					this.lastName = last;
+					this.age = age;
+					}
+				  var myFather = new Person("Bobby ", "Charlton", 98, "brown");
+				  
+				  
+				  document.getElementById("demo7").innerHTML =
+				  "Ryan Giggs is  " + myFather.age  ; 
+				  </script>
+				  
+				  
+				  <script>
+				  
+				  function Person(first, last, age, eye) {
+					this.firstName = first;
+					this.lastName = last;
+					this.age = age;
+					}
+				  var myFather = new Person("PAUL", "SCHOLES", 76, "brown");
+				  
+				  
+				  document.getElementById("demo8").innerHTML =
+				  "Paul Scholes is  " + myFather.age  ; 
+				  </script>
+				  <script>
+				  
+				  function Person(first, last, age, eye) {
+					this.firstName = first;
+					this.lastName = last;
+					this.age = age;
+					}var myFather = new Person("BILL", "FOULKES", 98, "brown");
+				  
+				  
+				  document.getElementById("demo9").innerHTML =
+				  "BILL FOULKES is  " + myFather.age  ; 
+				  </script>
+</div>
+
+
+			</div>
 				
 									   
 <br/>
-
+<hr>
 </section>
 
 <footer>
