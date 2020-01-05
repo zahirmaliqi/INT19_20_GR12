@@ -39,6 +39,7 @@ div.h6{
     width:200px;
     font-size: 15px;
     font-family: "Times New Roman", Times, serif;
+	cursor:pointer;
     }
 
 .submit{height:30px;
