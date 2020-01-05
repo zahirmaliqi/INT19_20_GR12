@@ -351,3 +351,13 @@ word-wrap:break-word;
   text-align: center;
   letter-spacing: 4px;
 }
+
+@font-face {
+  font-family: FontiManchester;
+  src: url(CustomCraft-Regular.woff);
+  font-weight: bold;
+}
+
+.FirstFont{
+  font-family: FontiManchester;
+}
