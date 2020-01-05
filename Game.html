@@ -340,6 +340,19 @@
 
 
   </script>
-	
+	<script>
+	try {
+  let name = prompt("Type your name:");
+  if (name == ''){
+    throw new Error("Oops, you didn't type your name!");
+  }
+}
+catch(e) {
+  alert(e.message);
+}
+finally {
+  alert('Thanks for playing!');
+}
+	</script>
 </body>      
 </html>
