@@ -1,15 +1,12 @@
 <footer>
-
 	<div >
-		<div class="row">
-
-		
-			<div class="col">
+	<div class="row">
+	<div class="col">
         <br>
-				<p >CONTACT DETAILS</p>
+	<p >CONTACT DETAILS</p>
         
 				
-					<p >The official Manchester United website with news,<br> fixtures, 
+	<p >The official Manchester United website with news,<br> fixtures, 
 						images, tickets, live match coverage,<br> match highlights,
 						player profiles, transfers, shop <br> and more."The Red Devils"
 						-The best sites. <br>Location: Manchester, United Kingdom<br>
@@ -54,9 +51,9 @@
            <br>
 				<p>&nbsp;&nbsp;   GRAB OUR NEWSLETTER</p>
 				
-				<form >
+				<form action="email.php" method="post">
 					<input type="text" name="Emri" placeholder="Name"><br>
-					<input type="text" name="Email" placeholder="Email"><br>
+					<input type="text" name="Email" placeholder="Email" autocomplete="off"><br>
 					<input type="submit" name="Ruaj" value="SUBMIT" id="submit"> 
 				</form>
 
