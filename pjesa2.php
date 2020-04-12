@@ -79,7 +79,17 @@
        <nav id="mainMenu">
       <div class="h6">
        <p id="fresh"><b><big>M</big>ANCHESTER<big>U</big>NITED</b></p>
-       <p id="minfont">The best team!</p>
+       <p id="minfont">
+	<!--explode() -Kthen nje fjali ne array.Mbas kthimit mundesh te marresh cilin do pjes te ati array  -->
+       	<?php
+             $string= "The best team in champions league !";
+             $vargu = explode(" ", $string);
+             echo $vargu[0]." "; 
+             echo $vargu[1]." "; 
+             echo $vargu[2]." "; 
+             echo $vargu[6]." "; 
+        ?>
+       </p>
       
        </div>
        <div >
