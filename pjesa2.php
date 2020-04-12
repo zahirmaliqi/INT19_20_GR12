@@ -152,7 +152,13 @@
 	
 </div>
 <br>
-	<h3 class="oldeng">There's only one place you want to play and that's Old Trafford</h3>
+	<h3 class="oldeng">
+	   <!--implode() -Bashkon elementet e nje array ne nje string -->
+           <?php
+               $implode = array('There\'s','only one place','you want to play','and that\'s Old Trafford');
+               echo implode( " ",$implode)."<br>";
+           ?>
+	</h3>
 	<div class="sip1">
   <img class ="id2" src="old.jpeg" alt="Old Trafford" style="width:100%">
   <div class="sip2">
