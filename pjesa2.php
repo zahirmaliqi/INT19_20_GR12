@@ -163,8 +163,16 @@
   <img class ="id2" src="old.jpeg" alt="Old Trafford" style="width:100%">
   <div class="sip2">
   <p class="fontshadow">Old Trafford Stadium is the world-famous home of Manchester United.
-	  So,Old Trafford is a football stadium in Old Trafford, Greater Manchester, England,
-	  and the home of Manchester United. With a capacity of 74,879, it is the largest club 
+      <!--explode() -Kthen nje fjali ne array.Mbas kthimit mundesh te marresh cilin do pjes te ati array  -->
+      <?php
+             $string1= "So,Old Trafford is a football stadium in Old Trafford, Greater Manchester, England, and the home of Manchester United";
+             $vargu1= explode(",", $string1);
+             echo $vargu1[0]." "; 
+             echo $vargu1[1]." "; 
+             echo $vargu1[2]." "; 
+             echo $vargu1[3]." "; 
+      ?>
+	  .With a capacity of 74,879, it is the largest club 
 	  football stadium in the United Kingdom, and the eleventh-largest in Europe.
 	  <br>
 	  <span class="FirstFont" >Old Trafford is located just over 2 miles south-west 
