@@ -173,7 +173,12 @@
              echo $vargu1[3]." "; 
       ?>
 	  .With a capacity of 74,879, it is the largest club 
-	  football stadium in the United Kingdom, and the eleventh-largest in Europe.
+	  football stadium in the United Kingdom, and the 
+	  <!--implode() -Bashkon elementet e nje array ne nje string -->
+	  <?php
+          $implode = array('eleventh','largest');
+          echo implode( "-",$implode);
+          ?>  in Europe.
 	  <br>
 	  <span class="FirstFont" >Old Trafford is located just over 2 miles south-west 
 		  from Manchester’s city centre and just under 3 miles from Manchester Piccadilly Station.</span>
