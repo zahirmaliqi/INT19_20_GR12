@@ -290,7 +290,16 @@
               <div class="dropdown">
               <span style="color:green;font-size: 30px;font-family: fantasy;">The best player in Premier League</span>
               <div class="dropdown-content">
-              <p style="font-size:12px;color:rgb(228, 128, 6);">Aaron Wan-Bissaka </p>
+              <p style="font-size:12px;color:rgb(228, 128, 6);">
+	      <?php
+              //constant array
+                define("players", [
+                    "Paul Pogba",
+                    "Aaron Wan-Bissaka",
+                    "Bruno Miguel Borges Fernandes "
+                ]);
+                echo players[1];
+                ?></p>
               </div>
   </div>
         <hr id="hr2">
