@@ -96,10 +96,15 @@
 		</div>
 			<div class="flip-box-back" >
 			  
-			  <p>Appearances: <big>27</big></p>
-			  <p>Clean Sheets: <big>19</big></p>
-			  <p>DATE OF BIRTH 15 Aug 1983</p>
-				<p>JOINED 1 Jul 2018</p></div>
+			  <?php
+				//function with two arguments ($fname and $year)
+				function familyName($fname, $year) {
+					echo "$fname Refsnes. Born in $year <br>";
+				}
+
+				familyName("Hege","1975");
+
+				?></div>
 			  
 			
 			</div></div>
@@ -119,9 +124,17 @@
 		  </div>
 			  <div class="flip-box-back" >
 				
-				<p>DATE OF BIRTH
-					16 NOV 2000</p>
-				<p>JOINED 3 Jul 2018</p></div>
+				<?php
+			   //Sort Array in Descending Order
+					$notes = array("Age : 32", "Appearances : 51", "Clean sheets : 32", "DATE OF BIRTH 22 Feb 1987","JOINED 27 Jul 2015");
+					rsort($notes);
+
+					$clength = count($notes);
+					for($x = 0; $x < $clength; $x++) {
+						echo $notes[$x];
+						echo "<br>";
+					}
+					?></div>
 				
 			</div>
 			  
