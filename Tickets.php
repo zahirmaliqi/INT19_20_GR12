@@ -103,7 +103,15 @@
             <img src="ekipii.jpg" alt="Lights" style="width:100%;">
             
             
-        <div id="flip">Click to slide the Fixtures</div>
+        <div id="flip">
+		  <?php define("FIXTURES", "Click to slide the Fixtures");
+          //constant inside a function
+          function myTest() {
+              echo FIXTURES;
+              }
+              
+              myTest();
+              ?></div>
         <div id="panel">
             <p style="display: grid;">
   
