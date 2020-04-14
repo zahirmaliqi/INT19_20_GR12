@@ -180,8 +180,17 @@
           echo implode( "-",$implode);
           ?>  in Europe.
 	  <br>
-	  <span class="FirstFont" >Old Trafford is located just over 2 miles south-west 
-		  from Manchester’s city centre and just under 3 miles from Manchester Piccadilly Station.</span>
+	  <span class="FirstFont" >
+		  
+          <!--printf() -Formaton stringun ne dalje  -->	
+	  <!--%u kthen ne output numrin ne dec   -->
+	  <?php
+           $numri = 10;
+           $vendi = "Station";
+           printf("Old Trafford is located just over %u miles south-west from Manchester’s city centre and just under 3 miles from  %'*8s .",$numri,$vendi);
+          ?>
+	
+	  </span>
 	  <p id="text1" class="fontshadow">Manchester United have won more trophies 
 		  than any other club in English football, with a record 20 League titles :<span id="textRegEx"></span></p>
 <script>
