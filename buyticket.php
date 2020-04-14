@@ -9,7 +9,13 @@
     <body>
     <div class="tiketa">
          <form name="myForm" onsubmit="return validateForm()" method="post">
-        <h3 style="color:#fff;">You need to Buy Tickets or T-shirt?</h3>
+        <h3 style="color:#fff;">
+          <?php
+            $txt = "Buy Tickets or T-shirt";
+            //output text and a variable
+            echo "You need to $txt?";
+            ?>
+           </h3>
         <h7 style="color:white">Fill the details below accurately and we will contact you soon.</h7>
             <input type="text" name="username" placeholder=" Name" required autofocus>
             <br><br>
