@@ -191,8 +191,18 @@
           ?>
 	
 	  </span>
-	  <p id="text1" class="fontshadow">Manchester United have won more trophies 
-		  than any other club in English football, with a record 20 League titles :<span id="textRegEx"></span></p>
+	  <p id="text1" class="fontshadow">
+          <!--ltrim() -fshin vetem fjalen  ne fillim te stringut (left trim) -->
+	  <!--trim()  -fshin vetem fjalen  ne fillim dhe ne fund te stringut  -->
+	  <!--rtrim() -fshin vetem fjalen  ne fund  te stringut (right trim) -->
+	  <?php
+           $trim="Manchester United have won more trophies than any other club in English football , with a record 20 League titles";
+           $trim1=ltrim($trim,"Manchester");
+           echo $trim1;
+      ?>
+		  
+		  
+		  :<span id="textRegEx"></span></p>
 <script>
                  text = document.getElementById("text1").innerHTML; 
                  document.getElementById("textRegEx").innerHTML = /20/.test(text);
