@@ -329,7 +329,16 @@ function clickCounter() {
 		
 		<div class="bor" class="ch2">
 			<img src="m1.jpeg" class="allpic">
-			<p class="ctr1">&#36;<span id="tofixed"></span></p>
+			<p class="ctr1">&#36;
+				
+			<!--printf() -Formaton numrin  ne dalje  -->	
+			<?php
+                           $number = 89;
+                           printf("%1\$.2f",$number);
+                        ?>
+			
+			
+			</p>
 			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas F.C Home</a></p>
 			<script>
                            var x = 89.757;
