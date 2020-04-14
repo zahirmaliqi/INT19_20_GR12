@@ -340,11 +340,7 @@ function clickCounter() {
 			
 			</p>
 			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas F.C Home</a></p>
-			<script>
-                           var x = 89.757;
-                           document.getElementById("tofixed").innerHTML =
-                           x.toFixed(2);
-                        </script>
+			
 		</div>
 		
 		<div class="bor" class="ch2">
