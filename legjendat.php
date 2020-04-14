@@ -164,74 +164,29 @@ document.getElementById("dem3").innerHTML = txt1 + " " + txt2;
 		<p>	<button class="button19" onclick="clickCounter()">
 			like
 			</button></p>
-			<div id="result"></div>
-			<div class="biografia " style="color: white;font-size:20px"> 
-				<ol type="1">
-					<li><p id="demo6" style="color:white;font-size:30px"></p>
-					Ryan Giggs closed one chapter of his football career - the epic, decades-spanning story of him as a player - on the same day he started a new one, as Manchester United’s new assistant manager.</li>
-					<li>
-					<p id="demo7" style="color:white;font-size:30px"></p>
-					Nobody embodies the values of Manchester United better than Sir Bobby Charlton. Having survived the trauma of the Munich Air Disaster when aged just 20, he played as if every game was for his fallen colleagues,</li>
-					<li><p id="demo8" style="color:white;font-size:30px"></p>
-					You must have a rare and special football talent to impress the great Sir Bobby Charlton.</li>
-					<li> <p id="demo9"style="color:white;font-size:30px"></p>
-					Bill Foulkes will always be remembered as a loyal and legendary servant of Manchester United, after an epic playing career which spanned a remarkable 18 seasons. </li>
-				  </ol>  
-				  <script>
-				  
-				  function Person(first, last, age, eye) {
-					this.firstName = first;
-					this.lastName = last;
-					this.age = age;
-					}
-				  var myFather = new Person("Ryan", "Giggs", 46, "brown");
-				  
-				  
-				  document.getElementById("demo6").innerHTML =
-				  "Ryan Giggs is  " + myFather.age  ; 
-				  </script>
-				  
-				  <script>
-				  
-				  function Person(first, last, age, eye) {
-					this.firstName = first;
-					this.lastName = last;
-					this.age = age;
-					}
-				  var myFather = new Person("Bobby ", "Charlton", 98, "brown");
-				  
-				  
-				  document.getElementById("demo7").innerHTML =
-				  "Bobby Charlton is  " + myFather.age  ; 
-				  </script>
-				  
-				  
-				  <script>
-				  
-				  function Person(first, last, age, eye) {
-					this.firstName = first;
-					this.lastName = last;
-					this.age = age;
-					}
-				  var myFather = new Person("Paul", "Scholes", 76, "brown");
-				  
-				  
-				  document.getElementById("demo8").innerHTML =
-				  "Paul Scholes is  " + myFather.age  ; 
-				  </script>
-				  <script>
-				  
-				  function Person(first, last, age, eye) {
-					this.firstName = first;
-					this.lastName = last;
-					this.age = age;
-					}var myFather = new Person("Bill", "Foulkes", 98, "brown");
-				  
-				  
-				  document.getElementById("demo9").innerHTML =
-				  "Bill Foulkes is  " + myFather.age  ; 
-				  </script>
-</div>
+			<div id="result">
+				<?php
+			//for loop inside another for loop to get the elements of the $motivation array
+				$motivation = array
+				(
+				array("Ryan Giggs closed one chapter of his football career - the epic, decades-spanning story of him as a player - on the same day he started a new one, as Manchester United’s new assistant manager.",
+				"Nobody embodies the values of Manchester United better than Sir Bobby Charlton. Having survived the trauma of the Munich Air Disaster when aged just 20, he played as if every game was for his fallen colleagues."
+				,"You must have a rare and special football talent to impress the great Sir Bobby Charlton.",
+				"Bill Foulkes will always be remembered as a loyal and legendary servant of Manchester United, after an epic playing career which spanned a remarkable 18 seasons."),
+				
+				);
+					
+				for ($row = 0; $row < 1; $row++) {
+				echo "<p><b></b></p>";
+				echo "<ol>";
+				for ($col = 0; $col < 4; $col++) {
+					echo "<li>".$motivation[$row][$col]."</li>";
+				}
+				echo "</ol>";
+				}
+				?>
+	                 </div>
+			
 
 
 			</div>
