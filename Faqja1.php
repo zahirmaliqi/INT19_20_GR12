@@ -103,8 +103,16 @@ function showSlides() {
 <td>
 <p class="paragrafi"> <img src="Foto1.jpg" id="imazhet">
 <span style="color:#800000;font-weight:bold;">RASHFORD EXPLAINS SUPERB GOALSCORING FORM</span><br>
-Marcus Rashford has revealed that consistency is the reason behind his superb goalscoring form.
-The Manchester United no.10 has put in sensational performance after sensational performance in the last few weeks and again he found the back of the net during Saturday’s Manchester derby.
+<!--readfile ()- funksion i cili përdoret për të lexuar një file dhe për ta shkruar atë në dalës.-->
+    <!--Nese nuk gjendet file athere ekzekuto "File not found".-->
+   <?php  
+   $File = @readfile("Rashford.txt"); 
+     if (!$File)  
+           { 
+              print "File not found"; 
+           } 
+   ?> 
+
 </p></td>
 <td>
 <p class="paragrafi"> <img src="Foto2.jpg" id="imazhet">
