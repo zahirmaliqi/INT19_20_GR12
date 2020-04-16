@@ -103,8 +103,8 @@ function showSlides() {
 <td>
 <p class="paragrafi"> <img src="Foto1.jpg" id="imazhet">
 <span style="color:#800000;font-weight:bold;">RASHFORD EXPLAINS SUPERB GOALSCORING FORM</span><br>
-<!--readfile ()- funksion i cili përdoret për të lexuar një file dhe për ta shkruar atë në dalës.-->
-    <!--Nese nuk gjendet file athere ekzekuto "File not found".-->
+   <!--readfile ()- funksion i cili përdoret për të lexuar një file dhe për ta shkruar atë në dalës.-->
+   <!--Nese nuk gjendet file athere ekzekuto "File not found".-->
    <?php  
    $File = @readfile("Rashford.txt"); 
      if (!$File)  
@@ -115,11 +115,15 @@ function showSlides() {
 
 </p></td>
 <td>
-<p class="paragrafi"> <img src="Foto2.jpg" id="imazhet">
-<span style="color:#800000;font-weight:bold;">THE MAIN TALKING POINTS FROM THE DERBY</span><br>
-Manchester United enjoyed a superb evening on Saturday, when we emerged from the Etihad with a vital 2-1 win in the Manchester derby.
-The Reds grabbed all three points in the clash with Manchester City, thanks to Marcus Rashford and Anthony Martial.
-</p></td>
+  <?php  
+  $File = @readfile("ManUtdDerby.txt"); 
+     if (!$File)  
+           { 
+              print "File not found"; 
+           } 
+   ?> 
+	
+</td>
 </tr>
 <tr>
 <td>
