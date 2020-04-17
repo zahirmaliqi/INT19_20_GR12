@@ -242,21 +242,22 @@ Sorry, your browser does not support inline SVG.
 			except via the procedures outlined by Italian law and the organising
 			club. Rules and procedures for ticket transfers can be found at juventus.com.<br>
 
-                2. Entrance to the stadium shall only be authorised upon proof of identity in the form
+                      2. Entrance to the stadium shall only be authorised upon proof of identity in the form
 			of an official document. An identity document is to be shown upon request to the
 			stewards in order to verify correspondence between the name on the ticket and the
 			name on the document.<br>
 
-               3. The ticket must be kept, and showed upon request, until the end of the event and until 
+                      3. The ticket must be kept, and showed upon request, until the end of the event and until 
 			departure from the stadium. Fans must comply with the club's procedures when leaving the stadium.<br>
 
-               4. Spectators may only occupy the seat allocated to them by their ticket and must not move to any other part
+                      4. Spectators may only occupy the seat allocated to them by their ticket and must not move to any other part
 			of the stadium without the express permission or instruction of a steward or officer from the club.<br>
 
-               5. Spectators may be subjected to security checks by stewards and also by metal detectors in order to ensure
+                      5. Spectators may be subjected to security checks by stewards and also by metal detectors in order to ensure
 			that no illegal, banned or dangerous materials are brought into the stadium. By purchasing a valid 
 			ticket to the stadium, fans acknowledge the right of Juventus and their appointed safety officials 
 			and stewards to search any individual, clothing and other items in their possession, without exception."
+			$str=str_replace(array("1","2","3","4","5"),array("*","*","*","*","*"),$str);
 			?>
 </p>
 </div>
