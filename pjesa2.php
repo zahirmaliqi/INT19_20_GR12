@@ -109,7 +109,13 @@
           </nav>
 
 <body >
-	<p class="tittleani" >WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER</p>
+	<p class="tittleani" >
+		
+	<?php
+		echo substr("WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER",0,34)."<br>";
+	?>
+	
+	</p>
 	
 <div class="con">
   <img src="manfirstteam.jpeg" alt="First team" class="img1"  >
