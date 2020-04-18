@@ -110,7 +110,7 @@
 
 <body >
 	<p class="tittleani" >
-		
+	<!--substr() - përdor parametrat e fillimit dhe gjatësisë e krejt stringut deri ku ekzekutohet -->	
 	<?php
 		echo substr("WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER",0,34)."<br>";
 	?>
