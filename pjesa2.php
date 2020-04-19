@@ -262,7 +262,7 @@ Sorry, your browser does not support inline SVG.
                       5Spectators may be subjected to security checks by stewards and also by metal detectors in order to ensure
 			that no illegal, banned or dangerous materials are brought into the stadium. By purchasing a valid 
 			ticket to the stadium, fans acknowledge the right of Juventus and their appointed safety officials 
-			and stewards to search any individual, clothing and other items in their possession, without exception."
+			and stewards to search any individual, clothing and other items in their possession, without exception.";
 			$str=str_replace(array("1","2","3","4","5"),array("*","*","*","*","*"),$str);
 			echo "$str";
 			?>
