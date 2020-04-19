@@ -128,7 +128,7 @@ function showSlides() {
 <tr>
 <td>
   <p class="paragrafi"> <img src="Foto3.jpg" id="imazhet">
-  <span style="color:#800000;font-weight:bold;">UNITED MAKE CHRISTMAS DREAMS COME TRUE</span><br>
+ <a href="sometext.php"> <span style="color:#800000;font-weight:bold;">UNITED MAKE CHRISTMAS DREAMS COME TRUE</span></a><br>
 The Manchester United first-team squad paid a special festive visit to young patients at three local hospitals, to deliver some early Christmas gifts.
 Following the United Women's visit on Monday, the players went to Royal Manchester Children’s Hospital and Francis House Children’s Hospice. 
        </p></td>
