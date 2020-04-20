@@ -99,9 +99,9 @@
 		
 
                        <ul>
-                            <li><a href="Faqja1.html" >HOMEPAGE</a></li>
+                            <li><a href="Faqja1.php" >HOMEPAGE</a></li>
                             <li> <a href="Historyandcuriosities.html">HISTORY AND CURIOSITIES</a> </li>
-                            <li><a href="pjesa2.html">PLAYERS</a>  </li>
+                            <li><a href="pjesa2.php">PLAYERS</a>  </li>
                             <li>  <a href="pic.html">GALLERY</a></li>
                             <li> <a href="Tickets.html">FIXTURES</a> </li>
                             <li> <a href="Game.html">GAME</a> </li>
