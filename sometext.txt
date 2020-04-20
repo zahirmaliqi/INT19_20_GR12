@@ -1,4 +1,4 @@
-<img src="Foto3.jpg" style="padding-left:130px;"/><br><br>
+<img src="Foto3.jpg" style="padding-left:120px;"/><br><br>
 
 <span style="color:#800000;font-weight:bold;font-size:40px;text-align:center;">UNITED MAKE CHRISTMAS DREAMS COME TRUE</span><br>
 <br>The Manchester United first-team squad paid a special festive visit to young patients at three local hospitals, to deliver some early 
