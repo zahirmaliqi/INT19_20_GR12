@@ -17,7 +17,7 @@
 
   <body>
 <?php include("menuu.php"); ?>
-<div style="background-color:white;">
+<div style="background-color:white;padding:120px;font-size:20px;line-height:1.5;text-align:justify;">
 <?php
 $myfile = fopen("sometext.txt", "r") or die("Unable to open file!");
 echo fread($myfile,filesize("sometext.txt"));
