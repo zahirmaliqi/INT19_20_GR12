@@ -134,7 +134,7 @@ Following the United Women's visit on Monday, the players went to Royal Manchest
        </p></td>
       <td>
         <p class="paragrafi"> <img src="Foto4.jpg" id="imazhet">
-       <span style="color:#800000;font-weight:bold;">UNITED V AZ ALKMAAR AT OLD TRAFFORD</span><br>
+  <a href="sometextt.php"><span style="color:#800000;font-weight:bold;">UNITED V AZ ALKMAAR AT OLD TRAFFORD</span></a><br>
          Manchester United will return to action on Thursday when AZ Alkmaar visit Old Trafford in the UEFA EU League, with the top spot in Group L up for grabs between two sides.
     Ole Gunnar Solskjaer's Reds require just a point to secure first place in the pool.
     </p></td>
