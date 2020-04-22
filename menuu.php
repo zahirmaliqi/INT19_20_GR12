@@ -1,3 +1,31 @@
+  <?php
+define('SEARCHBOX', 'txtSearch');
+function getSearchFor() {     
+$value = "";  
+ if (isset($_GET[SEARCHBOX])) {     
+ $value = $_GET[SEARCHBOX];    }  
+ return $value;  }
+function getDB() {   
+
+ require_once("dbconfigi.php");  
+$conn=new PDO("mysql:host=".servername.";dbname=lajmet",username,password);
+$conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION); 
+return $conn; }
+function getResults() {    
+ try {  
+ 
+$db = getDB();
+    
+	  $searchFor = '%' . getSearchFor() . '%';
+      $sql = "SELECT * FROM lajmet WHERE titullilink LIKE ?";   
+	  $statement = $db->prepare($sql);      
+	  $statement->bindValue(1, $searchFor);     
+	  $statement->execute();     
+	  return $statement;   }   
+	  catch (PDOException $e) {     
+	  die($e->getMessage());   } } ?>
+
+
 <header style="width: 100%">
 
 <div class="ikonat" style="float: left;">
@@ -10,9 +38,9 @@
 
   </div>
   <div style="float: right">
-    <form>
-	     
-           <input type="text" name="text" class="search" placeholder="Search Our Website..."  >
+    <form method="get" action="pamja.php">
+	<input type="search" name="<?php echo SEARCHBOX; ?>"     
+	  placeholder="Search Our Website..." value="<?php echo getSearchFor(); ?>" class="search" />
           
            <input type="submit" name="submit" class="submit" value="SEARCH">
        </form>
