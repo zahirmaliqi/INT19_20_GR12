@@ -407,6 +407,24 @@ function clickCounter() {
         <input type="text" name="number1" placeholder="Enter your color"></input><br>
         <input type="submit" name="submit" value="Submit"></input><br>
         </form>
+ <?php
+
+
+$getal = 0 ;
+$getal = $_POST["number1"];
+countDown($getal);
+
+function countDown($getal){
+    try {
+        if(is_numeric($getal)) throw new Exception ("Dont add number");
+        if($getal ==" ") throw new Exception ("Enter a color");
+        if($getal =="red") throw new Exception ("70 dollar");
+        if($getal=="blue") throw new Exception ("170 dollar.");
+    } catch (Exception $ex) {
+        echo($ex->getMessage());
+    } 
+}
+?>
 <hr>
 <footer>
 
