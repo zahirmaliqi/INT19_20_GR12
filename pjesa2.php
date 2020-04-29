@@ -403,6 +403,10 @@ function clickCounter() {
 	<br>
 	<a href="buyticket.html"><button class="btnbuy"  type="button">Buy now</button></a>
 	<br>
+	<form method="post">
+        <input type="text" name="number1" placeholder="Enter your color"></input><br>
+        <input type="submit" name="submit" value="Submit"></input><br>
+        </form>
 <hr>
 <footer>
 
