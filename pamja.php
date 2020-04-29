@@ -16,11 +16,11 @@
 	<?php
 	
 	include("menuu.php");?>
-	<div style="background-color:white;">
-	
+	<div style="background-color:white;padding:10px;font-size:18px;">
+	   <p>Results for "<?php echo getSearchFor(); ?>"</p>
 	  <?php if (! empty($_GET[SEARCHBOX]) && $result = getResults() ) { 
 	  while ($row = $result->fetch()) { ?>      
-	  <h3><?php echo $row['titullilink']; ?></h3>    
+	  <h4 style="color:#800000;"><?php echo $row['titullilink']; ?></h4>    
 	  <p><?php echo $row['pershkrimi']; ?></p>   
 	   <?php    } }  ?>
 	  
