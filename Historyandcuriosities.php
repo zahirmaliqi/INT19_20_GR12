@@ -119,19 +119,25 @@ As the Luis van, Gaal becomes the first non Britisher manager of the red devils.
 </audio>
 
 <script>
-function allowDrop(ev) {
-  ev.preventDefault();
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
 }
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
 }
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
- ev.target.appendChild(document.getElementById(data));
-}
 </script>
 		
 
@@ -144,20 +150,18 @@ function drop(ev) {
 <a href="https://www.fourfourtwo.com/features/why-juan-matas-decline-a-sign-times-manchester-united"target="_blank" id="link2" >FourFourTwo</a><br>
 <a href="https://thebusbyway.com/2012/09/10/10-interesting-facts-about-man-united/"target="_blank" id="link3" >The Busby Way</a><br>
 </div>
-<div>
 
+ <form>
+    <div id="poll">
+	<h3>Do you like our webpage so far?</h3>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="Players.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="300px" height="200px" />
+    Yes:
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)" style="height:10px;padding:0;margin:0;width:20px;">
+<br>No:
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)" style="height:10px;padding:0;margin:0;width:20px;">
+   
+  </form>
 </div>
-
-
-</div>
-
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-</div>
-
 
 <div>
 <p>Click the button to get your coordinates.</p>
