@@ -123,7 +123,20 @@ buy VARCHAR(20)NOT NULL,
 
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
-    
+    if (mysqli_query($conn, $sql)) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . mysqli_error($conn);
+}
+if(isset($_POST['add'])){
+$username=$_POST['username'];
+$lastname=$_POST['lastname'];
+$code=$_POST['code'];
+$email=$_POST['email'];
+$phonenumber=$_POST['phonenumber'];
+$buy=$_POST['buy'];
+
+
 
 
     ?>
