@@ -135,7 +135,20 @@ $code=$_POST['code'];
 $email=$_POST['email'];
 $phonenumber=$_POST['phonenumber'];
 $buy=$_POST['buy'];
+if($stmt = mysqli_prepare($conn,"INSERT INTO tiketa(username,lastname,code,email,phonenumber,buy)
+VALUES (?,?,?,?,?,?)") )
+{
+  mysqli_stmt_bind_param($stmt,"ssssss",$username,$lastname,$code,$email,$phonenumber,$buy);
+  if(!mysqli_stmt_execute($stmt))
+  {die("nuk jan konfiguru te dhenat ".mysqli_error($conn));
+  }
 
+}
+}
+
+
+
+mysqli_close($conn);
 
 
 
