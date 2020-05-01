@@ -21,7 +21,7 @@ if(isset($_COOKIE['email']) and isset($_COOKIE['pass'])) {
             <input type="password" name="password" id="pass" placeholder="Password"><br><br>
                    
                    <input type="submit"  value="Login" name="login" ></a><br>
-                   <input type="checkbox" name="remember" value="1">Remember Me
+                   <input type="checkbox" name="remember" value="1">Remember Me<br>
        
         </form>
 </div>
