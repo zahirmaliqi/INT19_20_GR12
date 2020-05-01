@@ -1,7 +1,7 @@
 body
 {
    font-family:  Tahoma,Geneva,sans-serif;
-    background: url(ekipii.jpg);
+   background-image:url(ekipii.jpg);
     background-size: cover;
     
 }
