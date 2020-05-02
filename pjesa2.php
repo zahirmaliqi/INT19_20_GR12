@@ -109,6 +109,7 @@
           </nav>
 
 <body >
+<!-- Shikojm nese lidhja me internet egziston nese ekziston shohim ngjyren "green" ndersa nese nuk egziston" No internet"-->
 <?php
 $host_name = 'www.google.com';
 $port_no = '80';
