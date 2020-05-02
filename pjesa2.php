@@ -116,7 +116,7 @@ $port_no = '80';
 
 $st = (bool)@fsockopen($host_name, $port_no, $err_no, $err_str, 10);
 if ($st) {
-    echo "<img  src='za.gif' style='width:35px;height:35px;' />";
+    echo "<img  src='za1.gif' style='width:35px;height:35px;' />";
 } else {
     header("Location: https://www.google.com/");
 }
