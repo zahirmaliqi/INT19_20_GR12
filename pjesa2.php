@@ -109,6 +109,17 @@
           </nav>
 
 <body >
+<?php
+$host_name = 'www.google.com';
+$port_no = '80';
+
+$st = (bool)@fsockopen($host_name, $port_no, $err_no, $err_str, 10);
+if ($st) {
+    echo "<img  src='za.gif' />";
+} else {
+    header("Location: https://www.google.com/");
+}
+?>
 	<p class="tittleani" >
 	<!--substr() - përdor parametrat e fillimit dhe gjatësisë e krejt stringut deri ku ekzekutohet -->	
 	<?php
