@@ -1,4 +1,7 @@
 <?php
+include_once("index.php");
+?>
+<?php
 if(isset($_COOKIE['email']) and isset($_COOKIE['pass'])) {
     $email = $_COOKIE['email'];
     $pass = $_COOKIE['pass'];
@@ -23,7 +26,8 @@ if(isset($_COOKIE['email']) and isset($_COOKIE['pass'])) {
                    
                    <input type="submit"  value="Login" name="login" ></a><br>
                    <input type="checkbox" name="remember" value="1">Remember Me<br>
-       
+       <h4>or</h4>
+	 <?php echo $output; ?>
         </form>
 </div>
     </body>
