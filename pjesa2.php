@@ -387,7 +387,22 @@ function clickCounter() {
 	</div>
 	<br>
 	<a href="buyticket.html"><button class="btnbuy"  type="button">Buy now</button></a>
-	<br>
+	<br><br>
+	
+	<div style="text-align:center;">
+	  <form style="color: #f94d00; ">
+            Choose a color :
+                <select style="background-color:#282828 ;color: white" name="cds" onchange="showCD(this.value)">
+                   <option value="">color</option>
+                   <option value="Red">Red</option>
+                   <option value="Balck">Balck</option>
+                   <option value="White">White</option>
+                   <option value="Cherry">Cherry</option>
+                   <option value="Mahogany">Mahogany</option>
+                </select>
+         </form>
+         <div id="txtHint" style="color: #f94d00"><b>Wait for  your information...</b></div>
+       </div>	
 	<hr>
 <footer>
 
