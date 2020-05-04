@@ -351,60 +351,33 @@ function clickCounter() {
 		
 		<div class="bor" class="ch2">
 			<img src="m1.jpeg" class="allpic">
-			<p class="ctr1">&#36;
-				
-			<!--printf() -Formaton numrin  ne dalje  -->	
-			<?php
-                           $number = 89;
-                           printf("%1\$.2f",$number);
-                        ?>
-			
-			
-			</p>
 			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas F.C Home</a></p>
 			
 		</div>
 		
 		<div class="bor" class="ch2">
 			<img src="u2.jpeg" class="allpic">
-			<p class="ctr1"><span class="nounder">&#36;160.99</span>&nbsp;&nbsp;&#36;129.99</p>
 			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas Manchester United</a></p>
 		</div>
 
 		<div class="bor" class="ch3">
 			<img src="u3.jpeg" class="allpic">
-			<p class="ctr1">
-			<script> 
-	                       var num=89.59; 
-	                       document.write("&#36;" + num.toString());		 
-                        </script>  
-			</p>
 			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas Home 2019/2020</a></p>
 
 		</div>
 
 		<div class="bor" class="ch4">
 			<img src="u4.jpeg" class="allpic">
-			<p class="ctr1">&#36;<span id="mathpow"></span></p>
 			<p class="ctr1"><a  class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas Rashford</a></p>
-			<script>
-              document.getElementById("mathpow").innerHTML = Math.pow(11,2);
-            </script>
 		</div>
 		
 		<div class="bor" class="ch5">
 			<img src="u5.jpeg" class="allpic">
-			<p class="ctr1">&#36;<span id="mathfunk"></span></p>
-			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">
-				Adidas Paulo Scholesvi&#231;</a></p>
-			<script>
-             document.getElementById("mathfunk").innerHTML = Math.round(89.9);
-            </script>
+			<p class="ctr1"><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas Paulo Scholesvi&#231;</a></p>
 		</div>
 
 		<div class="bor" class="ch6">
 			<img src="u6.jpeg" class="allpic">
-			<p class="ctr1"><span class="nounder">&#36;160.99</span>&nbsp;&nbsp;&#36;129.99</p>
 			<p class="ctr1" ><a class="t1" href="https://www.adidas.co.uk/manchester_united">Adidas Graphic 2020</a></p>
 
 		</div>
@@ -415,29 +388,7 @@ function clickCounter() {
 	<br>
 	<a href="buyticket.html"><button class="btnbuy"  type="button">Buy now</button></a>
 	<br>
-	<form method="post">
-        <input type="text" name="number1" placeholder="Enter your color"></input><br>
-        <input type="submit" name="submit" value="Submit"></input><br>
-        </form>
- <?php
-
-
-$getal = 0 ;
-$getal = $_POST["number1"];
-countDown($getal);
-
-function countDown($getal){
-    try {
-        if(is_numeric($getal)) throw new Exception ("Dont add number");
-        if($getal ==" ") throw new Exception ("Enter a color");
-        if($getal =="red") throw new Exception ("70 dollar");
-        if($getal=="blue") throw new Exception ("170 dollar.");
-    } catch (Exception $ex) {
-        echo($ex->getMessage());
-    } 
-}
-?>
-<hr>
+	<hr>
 <footer>
 
 	<div >
