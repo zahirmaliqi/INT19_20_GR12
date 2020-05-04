@@ -32,16 +32,16 @@ $conn->close();
 	// VALUES('UNITED MAKE CHRISTMAS DREAMS COME TRUE','The Manchester United first-team squad paid a special festive visit...')";
 	// $query.="INSERT INTO lajmet(titullilink,pershkrimi)
 	 //VALUES('UNITED V AZ ALKMAAR AT OLD TRAFFORD','Manchester United will return to action on Thursday when AZ Alkmaar visit Old Trafford in the UEFA EU League, with the top spot in Group L up for grabs between two sides.');"; */
-  $query="INSERT INTO lajmet(titullilink,pershkrimi)
-	 VALUES('RASHFORD EXPLAINS SUPERB GOALSCORING FORM','Marcus Rashford has revealed that consistency is the reason behind his superb goalscoring form.
-The Manchester United no.10 has put...');";
-  $query.="INSERT INTO lajmet(titullilink,pershkrimi) VALUES('THE MAIN TALKING POINTS FROM THE DERBY','Manchester United enjoyed a superb evening on Saturday, when we emerged from the Etihad with a vital 2-1 win in the Manchester derby.');";
+ // $query="INSERT INTO lajmet(titullilink,pershkrimi)
+	// VALUES('RASHFORD EXPLAINS SUPERB GOALSCORING FORM','Marcus Rashford has revealed that consistency is the reason behind his superb goalscoring form.
+//The Manchester United no.10 has put...');";
+  //$query.="INSERT INTO lajmet(titullilink,pershkrimi) VALUES('THE MAIN TALKING POINTS FROM THE DERBY','Manchester United enjoyed a superb evening on Saturday, when we emerged from the Etihad with a vital 2-1 win in the Manchester derby.');";
 
-	 $result=mysqli_multi_query($conn,$query);
-	 if(!$result){
-		 die("NUK shtohen tdhenat ".mysqli_error($conn));
-	 }
-	 echo "Lajmi eshte shtuar";
+	// $result=mysqli_multi_query($conn,$query);
+	// if(!$result){
+	//	 die("NUK shtohen tdhenat ".mysqli_error($conn));
+	// }
+	// echo "Lajmi eshte shtuar";
  
 
 
@@ -49,19 +49,33 @@ The Manchester United no.10 has put...');";
 
 
 
-/*  $conn=mysqli_connect(servername,username,password,dbname);
+ $conn=mysqli_connect(servername,username,password,dbname);
 
 if(!$conn){
 	die("Konektimi ka deshtuar ".mysqli_connect_error());
 }
 
-$sql="CREATE TABLE lajmet (
-   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-   titullilink VARCHAR(100) NOT NULL,
-   pershkrimi VARCHAR(50),
-   data_regjistrimit TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
-)";
+//$sql="CREATE TABLE lajmet (
+//   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ //  titullilink VARCHAR(100) NOT NULL,
+ //  pershkrimi VARCHAR(50),
+//   data_regjistrimit TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+//)";
  
+$sql="CREATE TABLE `users` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `oauth_provider` enum('facebook','google','twitter','') COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+ `oauth_uid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+ `first_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+ `last_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+ `email` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+ `gender` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+ `picture` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+ `link` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+ `created` datetime NOT NULL,
+ `modified` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci";  ///////Qeta me shtu ne github SOT!!!
 
 
 if(!mysqli_query($conn,$sql)){
@@ -71,7 +85,7 @@ if(!mysqli_query($conn,$sql)){
 }
 echo "<br>Tabela eshte krijuar";
 
-mysqli_close($conn); */
+mysqli_close($conn); 
 
 
 ?>
