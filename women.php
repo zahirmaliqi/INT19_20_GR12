@@ -97,7 +97,7 @@
 			<div class="flip-box-back" >
 			  
 			  <?php
-				
+				//function with two arguments ($fname and $year)
 				function familyName($fname, $year) {
 					echo "$fname Refsnes. Born in $year <br>";
 				}
@@ -125,7 +125,7 @@
 			  <div class="flip-box-back" >
 				
 				<?php
-			   
+			   //Sort Array in Descending Order
 					$notes = array("Age : 32", "Appearances : 51", "Clean sheets : 32", "DATE OF BIRTH 22 Feb 1987","JOINED 27 Jul 2015");
 					rsort($notes);
 
@@ -152,7 +152,7 @@
 					  
 				  
 			  </div>
-					 <div class="flip-box-back">
+				  <div class="flip-box-back">
 				  <?php
 			   
 					$notes = array("Age : 32", "Appearances : 51", "Clean sheets : 32", "DATE OF BIRTH 22 Feb 1987","JOINED 27 Jul 2015");
@@ -184,14 +184,16 @@
 				  </div>
 					  <div class="flip-box-back">
 					  <?php
-				
-				function familyName($fname, $year) {
-					echo "$fname Refsnes. Born in $year <br>";
-				}
+			   
+					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
+					rsort($notes);
 
-				familyName("Hege","1975");
-
-				?></div></div>
+					$clength = count($notes);
+					for($x = 0; $x < $clength; $x++) {
+						echo $notes[$x];
+						echo "<br>";
+					}
+					?></div></div>
 						
 					  
 					  
@@ -266,14 +268,16 @@
 	</div>
 		<div class="flip-box-back">
 		<?php
-				
-				function familyName($fname, $year) {
-					echo "$fname Refsnes. Born in $year <br>";
-				}
+			   
+					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
+					rsort($notes);
 
-				familyName("Hege","1975");
-
-				?></div>
+					$clength = count($notes);
+					for($x = 0; $x < $clength; $x++) {
+						echo $notes[$x];
+						echo "<br>";
+					}
+					?></div>
 		  
 		
 		</div></div>
@@ -322,14 +326,16 @@
 		  </div>
 			  <div class="flip-box-back">
 			  <?php
-				
-				function familyName($fname, $year) {
-					echo "$fname Refsnes. Born in $year <br>";
-				}
+			   
+					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
+					rsort($notes);
 
-				familyName("Hege","1975");
-
-				?></div>
+					$clength = count($notes);
+					for($x = 0; $x < $clength; $x++) {
+						echo $notes[$x];
+						echo "<br>";
+					}
+					?></div>
 				
 			</div>
 			  
@@ -422,14 +428,16 @@
 	  </div>
 		  <div class="flip-box-back" >
 		  <?php
-				
-				function familyName($fname, $year) {
-					echo "$fname Refsnes. Born in $year <br>";
-				}
+			   
+					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
+					rsort($notes);
 
-				familyName("Hege","1975");
-
-				?></div>
+					$clength = count($notes);
+					for($x = 0; $x < $clength; $x++) {
+						echo $notes[$x];
+						echo "<br>";
+					}
+					?></div>
 			
 		</div>
 		  
@@ -475,7 +483,7 @@
 	</div>
 		<div class="flip-box-back">
 		<?php
-			   
+			   //Sort Array in Descending Order
 					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
 					rsort($notes);
 
@@ -533,14 +541,16 @@
 		  </div>
 			  <div class="flip-box-back">
 			  <?php
-				
-				function familyName($fname, $year) {
-					echo "$fname Refsnes. Born in $year <br>";
-				}
+			   //Sort Array in Descending Order
+					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
+					rsort($notes);
 
-				familyName("Hege","1975");
-
-				?></div>
+					$clength = count($notes);
+					for($x = 0; $x < $clength; $x++) {
+						echo $notes[$x];
+						echo "<br>";
+					}
+					?></div>
 				
 			</div>
 			  
@@ -561,7 +571,7 @@
 			  </div>
 				  <div class="flip-box-back">
 				  <?php
-			   
+			   //Sort Array in Descending Order
 					$notes = array("Age : 23", "Appearances : 3", "Clean sheets : 3", "DATE OF BIRTH 28 Jun 1996","JOINED 1 Jul 2012");
 					rsort($notes);
 
@@ -920,21 +930,36 @@
 			</div>
 
 			<div class="col">
-           <br><p>&nbsp;&nbsp;   GRAB OUR NEWSLETTER</p>
+           <br>
+				<p>&nbsp;&nbsp;   GRAB OUR NEWSLETTER</p>
+				
 				<form >
 					<input type="text" name="Emri" placeholder="Name"><br>
 					<input type="text" name="Email" placeholder="Email"><br>
 					<input type="submit" name="Ruaj" value="SUBMIT" id="submit"> 
-				</form></div>
+				</form>
+
+
+			</div>
 		</div>
 		<br>
-		<hr >
+		<hr  >
 		<div class="end">
 		<div id="cright" > Copyright &copy; 2013 - All Rights Reserved -Part Shop</div>
-<div id="temp" >Template by OS Templates</div>
-</div>
-<br><br></div>
+    <div id="temp" >Template by OS Templates</div>
+    </div>
+		<br>
+		<br>
+
+
+    </div>
 </footer>
+	
 </body>
+
+
+
+
 </html>
+
 
