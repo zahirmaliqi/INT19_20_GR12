@@ -14,7 +14,7 @@ if(isset($_POST['login'])) {
         }
         session_start();
         $_SESSION['email']=$email;
-        header("location:Tickets.php");
+        header("location:Faqja1.php");
     } else {
         echo "Email or Password is Invailid.<br> click here to <a href='login1.php'>TRY AGAIN</a>";
     }
