@@ -14,6 +14,6 @@ function showCD(str) {
       document.getElementById("txtHint").innerHTML=this.responseText;
     }
   }
-  xmlhttp.open("GET","getcd.php?q="+str,true);
+  xmlhttp.open("GET","get.php?q="+str,true);
   xmlhttp.send();
 }
