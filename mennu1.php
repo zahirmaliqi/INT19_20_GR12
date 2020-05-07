@@ -66,8 +66,14 @@
 		<div id="cright" > Copyright &copy; 2013 - All Rights Reserved -Part Shop</div>
     <div id="temp" >Template by OS Templates</div>
     </div>
-		<br>
-		<br>
+	<br>
+                <?php
+                session_start();
+                echo "<a href='logout.php'>LOGOUT</a>";
+
+
+                ?>
+                <br>
 
 
     </div>
