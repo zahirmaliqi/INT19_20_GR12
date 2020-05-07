@@ -2,7 +2,7 @@
 $q=$_GET["q"];
 
 $xmlDoc = new DOMDocument();
-$xmlDoc->load("cd_catalog.xml");
+$xmlDoc->load("TeDhenat.xml");
 
 $x=$xmlDoc->getElementsByTagName('Color');
 
