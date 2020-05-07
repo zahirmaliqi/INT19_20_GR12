@@ -1,138 +1,147 @@
 <?xml version="1.0"?>
 
--<CATALOG>
-
-
--<CD>
-
+<CATALOG>
+  
+<CD>
 <TITLE>Manchester United Seasonal LS Tee-Red</TITLE>
-
 <Color>Red</Color>
-
-
+<Player>B.Fernandes</Player>
+<Size> XXL , XL , L</Size>
+<Brand>ADIDAS</Brand>
+<GoldPrice>101.90 dollar</GoldPrice>
+<Price>80.90 dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Graphic T-Shirt</TITLE>
-
 <Color>Green</Color>
-
-
-
+<Player>James</Player>
+<Size> XL , XxxL , Xxs</Size>
+<Brand>Roadster</Brand>
+<GoldPrice>107.90dollar</GoldPrice>
+<Price>85.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Icons Top</TITLE>
-
 <Color>Blue</Color>
-
-
+<Player>Magurie</Player>
+<Size> M , L , S</Size>
+<Brand>Allen Solly</Brand>
+<GoldPrice>107.90dollar</GoldPrice>
+<Price>85.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United 1973 No 7 Retro Shirt</TITLE>
-
 <Color>White</Color>
-
-
+<Player>Wan-Bissaka</Player>
+<Size> XL , XxxL , Xxs , Xs , M</Size>
+<Brand>Allen Solly</Brand>
+<GoldPrice>99.90dollar</GoldPrice>
+<Price>85.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Tipped Tonal Devil Polo Shirt</TITLE>
-
 <Color>Grey</Color>
-
-
-
+<Player>Mason Greenwood</Player>
+<Size> XxxL , Xxs , Xs , M</Size>
+<Brand>Jack Jones</Brand>
+<GoldPrice>70.90dollar</GoldPrice>
+<Price>45.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Tipped Tonal Devil</TITLE>
-
 <Color>Black</Color>
-
-
-
+<Player>Anothy Martial</Player>
+<Size> XL , S , Xxs , L , M</Size>
+<Brand>United Color of Benettona</Brand>
+<GoldPrice>67.90dollar</GoldPrice>
+<Price>45.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Trinity T-Shirt</TITLE>
-
 <Color>Pink</Color>
-
-
+ <Player>Paul Pogba</Player>
+<Size> XL , S , Xxs </Size>
+<Brand>Jack Jones</Brand>
+<GoldPrice>47.90dollar</GoldPrice>
+<Price>20.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United 99 Treble</TITLE>
-
 <Color>Purple</Color>
-
-
+<Player>Daniel James</Player>
+<Size> XL , S , Xxs , L , M</Size>
+<Brand>Jack Jones</Brand>
+<GoldPrice>145.90dollar</GoldPrice>
+<Price>105.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United 1968 Special Edition</TITLE>
-
 <Color>Mahogany</Color>
-
-
+ <Player>Fred Midfielder</Player>
+<Size> XL , S , Xxs , L , M , XXL , M</Size>
+<Brand>ADIDAS</Brand>
+<GoldPrice>156.90dollar</GoldPrice>
+<Price>85.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Trinity T-Shirt</TITLE>
-
 <Color>Yellow</Color>
-
+<Player>Mason Greenwood</Player>
+<Size> L , M , XXL , M</Size>
+<Brand>Jack Jones</Brand>
+<GoldPrice>107.90dollar</GoldPrice>
+<Price>85.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Pritned Khaki/Ecru</TITLE>
-
 <Color>Brown</Color>
-
-
+<Player>Odion Ighalo</Player>
+<Size> XL , XXL , M</Size>
+<Brand>Allen Solly</Brand>
+<GoldPrice>197.90dollar</GoldPrice>
+<Price>145.90dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United Slash Graphic</TITLE>
-
 <Color>Purple</Color>
-
-
+<Player>Jesse Lingardo</Player>
+<Size> XL , S , Xxs , M , XXL , M</Size>
+<Brand>Allen Solly</Brand>
+<GoldPrice>107.90 dollar</GoldPrice>
+<Price>85.90 dollar</Price>
 </CD>
 
 
--<CD>
-
+<CD>
 <TITLE>Manchester United 1963 FA Cup Final Retro Shirt</TITLE>
-
 <Color>Cherry</Color>
-
-
-
+<Player>Nemanja Matic</Player>
+<Size> XL , S , Xxs , L , M , XXL , M</Size>
+<Brand>Allen Solly</Brand>
+<GoldPrice>107.90 dollar</GoldPrice>
+<Price>85.90 dollar</Price>
 </CD>
 
 </CATALOG>
