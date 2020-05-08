@@ -3,8 +3,13 @@
 	<head>
 		<title>Signup</title>
 		
-		<link rel="stylesheet"  href="signup.css">
-		<form action="inc.php" method="POST" id="registration" >
+		<link rel="stylesheet" href="signup.css">
+	</head>
+	<body>
+		
+			<div class="simple-form">
+             
+				<form action="inc.php" method="POST" id="registration" >
                 <h2 style="color:white;">Sign up</h2>
                 <?php
                 if(isset($_GET['first'])){
@@ -29,16 +34,56 @@
 				    <p id="sub" style="color: white;"></p>
 				    <p style="color: white;">Already have an account? &nbsp;<a href="login1.php" id="log">Log In</a></p>
                     <?php
+             /* $fullUrl="http: //$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+              
+              if(strpos($fullUrl,"signup=empty")== true) {
+              echo "<p class='error'>You did not fill in all fields!</p>";
+              exit();
+              }
+            elseif(strpos($fullUrl,"signup=char")== true) {
+                echo "<p class='error'>You used an invalid e-mail!</p>";
+                exit();
+                }
+            elseif(strpos($fullUrl,"signup=email")== true) {
+                    echo "<p class='error'>You used invalid characters!</p>";
+                    exit();
+                    }
+            elseif(strpos($fullUrl,"signup=success")== true) {
+                        echo "<p class='success'>You have been signed up!</p>";
+                        exit();
+                        }*/
 
+                 
+                        
+                        if(!isset($_GET['signup'])){
 
+                            exit();
+                        }else {
+                            $signupCheck = $_GET['signup'];
 
-	</head>
-	<body>
-		
-			<div class="simple-form">
+                            if($signupCheck== "empty") {
+                                echo "<p class='error'> You did not fill in all fields!</p>";
+                                exit();
+                            }
+                            elseif($signupCheck== "char") {
+                                echo "<p class='error'> You used invalid characters!</p>";
+                                exit();
 
-				ref="login1.php" id="log">Log In</a></p>
+                            }
+                            elseif($signupCheck== "email") {
+                                echo "<p class='error'> You used an invalid email!</p>";
+                                exit();
+
+                            }                  
+                            elseif($signupCheck== "success") {
+                                echo "<p class='success'> You have been signed up!</p>";
+                                exit();
+                            }
+                        }
+                 ?>
 			</form>
-		</div>
+       
+            
+        	</div>
 	</body>
 </html>
