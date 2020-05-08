@@ -171,10 +171,31 @@ $f = new MyClass3('20px','white','Under 23s and 18s');
 	
 	<li> <a href="legjendat.php" style="color:white;" ><?php
 	
-	<li> <a href="legjendat.html" style="color:white;" >Legends</a> </li>
-	
-</ul>
- </div>
+	class Myclass4
+{
+
+private $font_size;
+private $font_color;
+private $string_value;
+
+function __construct($font_size,$font_color,$string_value)
+{
+$this->font_size = $font_size;
+$this->font_color = $font_color;
+$this->string_value = $string_value;
+$this->customize_print();
+}
+
+function customize_print()
+{
+echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";>".$this->string_value."</p>";
+} 
+}
+
+$f = new MyClass4('20px','white','Legends');
+
+?>
+</a></li></ol></div>
  <canvas id="myCanvas" width="170" height="60"
  style="border:4px solid black;border-radius:20px;background-color:rgb(238, 224, 28);
  padding-bottom:5px">
