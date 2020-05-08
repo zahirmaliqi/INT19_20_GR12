@@ -86,13 +86,31 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000);
 }
+// perdorimi i klasave dhe objekteve 
 </script>
        <div style="background:-webkit-linear-gradient(right,white,white,white,red);">
   <br>
           <p class="titulli"><big>C</big>HAMP<big class="redbig">20</big>NS</p>
 	  <div class="d1">
-<p>It's about a dedication and a passion whatever the score.It's about the hope and the dream. </p>
-<p> We will never die .We will  keep the red flag flying high. </p>
+   
+    <?php 
+  
+class Myclass
+{
+ public $font_size ="40px";
+ public $font_color = "grey";
+ public $string_name = "It's about a dedication and a passion whatever the score.It's about the hope and the dream.";
+ public $string_name2 ="We will never die .We will keep the red flag flying high";
+ public function customize_print()
+ {
+ echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";>".$this->string_name."</p>";
+  echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";>".$this->string_name2."</p>";
+ 
+ }
+}
+$f = new MyClass;
+echo $f->customize_print();
+?>
 </div>
 	       <a href="Tickets.html"><button type="button">VIEW THE FIXTURES<small>&gt;&gt;</small></button></a>
 <hr id="hr2">
