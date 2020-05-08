@@ -51,18 +51,43 @@
 		
 		
 <ul>
-                            <li><a href="Faqja1.html" >HOMEPAGE</a></li>
-                            <li> <a href="Historyandcuriosities.html">HISTORY AND CURIOSITIES</a> </li>
-			    <li><a href="pjesa2.html">PLAYERS</a>  </li>
-                            <li>  <a href="pic.html">GALLERY</a></li>
-                            <li> <a href="Tickets.html">FIXTURES</a> </li>
-                            <li> <a href="Game.html">GAME</a> </li>
+                            <li><a href="Faqja1.php" >HOMEPAGE</a></li>
+                            <li> <a href="Historyandcuriosities.php">HISTORY AND CURIOSITIES</a> </li>
+			    <li><a href="pjesa2.php">PLAYERS</a>  </li>
+                            <li>  <a href="pic.php">GALLERY</a></li>
+                            <li> <a href="Tickets.php">FIXTURES</a> </li>
+                            <li> <a href="Game.php">GAME</a> </li>
                        </ul> 
           </nav>
 
-<div class="ekipet">
-<ul>
-	<li><a href="pic.html" style="color:white;" >First team</a></li>
+ <div class="ekipet">
+<ol style="color:red">
+<li><a href="pic.php" >
+<?php class Myclass1
+ {
+// Declaring three private variables
+ private $font_size;
+ private $font_color;
+ private $string_value;
+// Declarte construct method which accepts three parameters and the method customize_print()
+ function __construct($font_size,$font_color,$string_value)
+ {
+ $this->font_size = $font_size;
+ $this->font_color = $font_color;
+ $this->string_value = $string_value;
+ $this->customize_print();
+ }
+// Declare a method for customize print 
+ function customize_print()
+ {
+ echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";>".$this->string_value."</p>";
+ } 
+ }
+// Create a new object and passes three parameters 
+$f = new MyClass1('20px','white','First team');
+
+ ?></a></li>
+
 	<li><a href="women.html" style="color:white;" >Women</a>  </li>
 	<li> <a href="rinia.html" style="color:white;" >Under 23s and 18s</a> </li>
 	
