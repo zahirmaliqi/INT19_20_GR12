@@ -12,5 +12,19 @@ function is_ajax() {
 	return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
 }
 
+function test(){
+	$return = $_POST;
+	
+	//Informatat qe pranohen ne forma, mund te i veme kushte te ndryshme 
+	if ($return["Favorite_player"] == ""){
+		$return["Favorite_player"] = "Please enter a player ";
+	}
+	if ($return["Favorite_player"] == "Wayn"){
+		$return["Premier_League"] = "2018/2019 ";
+	}
+	
+	$return["json"] = json_encode($return);
+	echo json_encode($return);
+}
 
 ?>
