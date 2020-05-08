@@ -7,5 +7,10 @@ if (is_ajax()) {
 		}
 	}
 }
+//Funksioni qe kontrollon nese ankesa eshte ne Ajax
+function is_ajax() {
+	return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
+}
+
 
 ?>
