@@ -163,13 +163,13 @@
             Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.</p>
             <br/>
             
-           <a href="buyticket.html"> <button id="button1" type="button" >
+           <a href="buyticket.php"> <button id="button1" type="button" >
 		   <?php
            // case-insensitive constant name 
            define("BUY", "BUY TICKETS", true);
             echo BUY;?><small>&#8594 </small></button></a>
             
-           <a href="buyticket.html"><button  id="butoni1" type="button" > 
+           <a href="buyticket.php"><button  id="butoni1" type="button" > 
 		   <?php
            // case-insensitive constant name 
            define("VIP", "BUY MATCHDAY VIP", true);
