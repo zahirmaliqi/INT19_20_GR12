@@ -50,6 +50,7 @@
 
                 <a id="newgame_menu">New Game</a>
                 <a id="setting_menu">Settings</a>
+	        <a href="lojaPHP/loja.php" style="font-size:24px;font-weight:bold;color:white;">Try the PHP Game too!</a>
             </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
