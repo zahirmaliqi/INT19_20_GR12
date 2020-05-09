@@ -63,16 +63,74 @@
     </style>
  <div id="tedhenat">       
 <h2 style="font-family: Times New Roman, Times, serif;"  >Thank you</h2> <?php
-echo $username;
-echo "<br>";
-echo $lastname;
-echo "<br>";
-echo $phonenumber;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $buy;
-echo "<br>";
+<?php
+//Realizimi i enkapsulimit permes Get dhe Set
+class MyClass
+{
+private $fname;
+private $lname;
+private $email;
+
+// set user's first name
+public function setFName($fname)
+{
+$this->fname = $fname;
+}
+ 
+// get user's first name
+public function getFName()
+{
+return $this->fname;
+}
+
+// set user's last name
+public function setLName($lname)
+{
+$this->lname = $lname;
+}
+ 
+// get user's last name
+public function getLName()
+{
+return $this->lname;
+} 
+
+// set user's email address
+
+public function setEmail($email)
+
+{
+
+$this->email = $email;
+
+}
+
+ 
+
+// get user's email address
+
+public function getEmail()
+
+{
+
+return $this->email;
+
+}
+
+}
+
+ 
+
+$user = new MyClass();
+
+$user->setFName($username);
+
+$user->setLName($lastname);
+
+$user->setEmail($email);
+
+echo 'Name: ' . $user->getFName().' </br>Last Name: ' . $user->getLName() .'</br> Email: ' . $user->getEmail();
+
 ?>
 <h2 style="font-family: Times New Roman, Times, serif;">We will contact you soon!</h2>
 <a href="Tickets.php" class="button" style="font-family: Times New Roman, Times, serif;">Back</a> 
