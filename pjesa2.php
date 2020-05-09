@@ -132,7 +132,7 @@ if ($st) {
 	
 <div class="con">
   <img src="manfirstteam.jpeg" alt="First team" class="img1"  >
-	<a href="pic.html">
+	<a href="pic.php">
   <button class="center">FIRST TEAM<br>VIEW PROFILES&nbsp;&rarr;</button>
 		</a>
 </div>
@@ -141,13 +141,13 @@ if ($st) {
 <div class="row1">
 	<div>
          <img src="mangirls.png" class="woman" >
-		<a href="women.html" >
+		<a href="women.php" >
          <button class="buttonstyle" id="buttonstyle">WOMEN<br>VIEW PROFILES&nbsp;&rarr;</button>
 		</a>
     </div>
     <div>
          <img src="under18.jpeg" class="u18">
-	    <a href="rinia.html" >
+	    <a href="rinia.php" >
          <button class="buttonstyle" id="buttonstyle1">UNDER-18S<br>VIEW PROFILES&nbsp;&rarr;</button>
 	    </a>
    </div>
@@ -156,14 +156,14 @@ if ($st) {
 <div class="row1">
 	<div>
 		<img src="under23.jpeg" class="woman">
-		<a href="rinia.html" >
+		<a href="rinia.php" >
 		<button class="buttonstyle" id="buttonstyle2">UNDER-23S<br>VIEW PROFILES&nbsp;&rarr;</button>
 		</a>
 
 	</div>
 	<div>
 		<img src="legends.jpeg" class="u18">
-		<a href="legjendat.html" >
+		<a href="legjendat.php" >
 		<button class="buttonstyle" id="buttonstyle3">LEGEND<br>VIEW PROFILES&nbsp;&rarr;</button>
 		</a>
 		
