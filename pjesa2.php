@@ -11,6 +11,7 @@
 	<title></title>
 	<script src="exjs.js"></script>
 	<script src="jscript.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
@@ -49,6 +50,27 @@
         $(".f1").slideDown("fast");
         
     });
+});
+$("document").ready(function(){
+	$(".js-ajax-php-json").submit(function(){
+		var data = {
+			"action": "test"
+		};
+		data = $(this).serialize() + "&" + $.param(data);
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: "response.php",
+			data: data,
+			success: function(data) {
+				$(".the-return").html(
+					"Favorite player: " + data["Favorite_player"] + "<br />Premier League: " + data["Premier_League"] + "<br />Goal: " + data["Goal"]
+				);
+
+			}
+		});
+		return false;
+	});
 });
 
 </script>
