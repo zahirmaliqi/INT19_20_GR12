@@ -142,3 +142,28 @@ if(isset($_GET["clearall"]))
    <?php
    }
    ?>
+   <div style="clear:both"></div>
+   <br />
+   <h3 style="font-size:20px;color:#f1f1f1;">Order Details</h3>
+   <div class="table-responsive" >
+   <?php echo $message; ?>
+   <div align="right">
+    <a href="shopping.php?action=clear" style="font-size:20px;color:blue;"><b>Clear Cart</b></a>
+   </div>
+   <table class="table table-bordered" style="border:3px solid green;">
+    <tr style="border:3px solid green;">
+     <th width="40%" style="border:3px solid green; font-size:20px;color:aliceblue;">Item Name</th>
+     <th width="10%"style="border:3px solid green;font-size:20px;color:aliceblue;">Quantity</th>
+     <th width="20%"style="border:3px solid green;font-size:20px;color:aliceblue;">Price</th>
+     <th width="15%"style="border:3px solid green;font-size:20px;color:aliceblue;">Total</th>
+     <th width="5%"style="border:3px solid green;font-size:20px;color:aliceblue;">Action</th>
+    </tr>
+   <?php
+   if(isset($_COOKIE["shopping_cart"]))
+   {
+    $total = 0;
+    $cookie_data = stripslashes($_COOKIE['shopping_cart']);
+    $cart_data = json_decode($cookie_data, true);
+    foreach($cart_data as $keys => $values)
+    {
+   ?>
