@@ -167,3 +167,36 @@ if(isset($_GET["clearall"]))
     foreach($cart_data as $keys => $values)
     {
    ?>
+    <tr style="border:3px solid green;">
+     <td style="border:3px solid green;font-size:20px;color:aliceblue;"><?php echo $values["item_pname"]; ?></td>
+     <td style="border:3px solid green;font-size:20px;color:aliceblue;"><?php echo $values["item_quantity"]; ?></td>
+     <td style="border:3px solid green;font-size:20px;color:aliceblue;">$ <?php echo $values["item_price"]; ?></td>
+     <td style="border:3px solid green;font-size:20px;color:aliceblue;">$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
+     <td style="border:3px solid green;font-size:20px;color:aliceblue;"><a href="shopping.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger" style="color:red;">Remove</span></a></td>
+    </tr>
+   <?php 
+     $total = $total + ($values["item_quantity"] * $values["item_price"]);
+    }
+   ?>
+    <tr style="border:3px solid green;">
+     <td colspan="3" align="right" style="border:3px solid green;font-size:20px;color:aliceblue;">Total</td>
+     <td align="right" style="border:3px solid green;font-size:20px;color:aliceblue;">$ <?php echo number_format($total, 2); ?></td>
+     <td style="border:3px solid green;"></td>
+    </tr>
+   <?php
+   }
+   else
+   {
+    echo '
+    <tr style="border:3px solid green;">
+     <td colspan="5" align="center" style="border:3px solid green;font-size:20px;color:aliceblue;">No Item in Cart</td>
+    </tr>
+    ';
+   }
+   ?>
+   </table>
+   </div>
+  </div>
+  <br />
+ </body>
+</html>
