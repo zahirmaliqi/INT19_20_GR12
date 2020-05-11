@@ -25,6 +25,7 @@ $db = getDB();
 	  catch (PDOException $e) {     
 	  die($e->getMessage());   } } ?>
 
+	  <?php include('session.php');?>
 
 <header style="width: 100%">
 
@@ -35,8 +36,12 @@ $db = getDB();
 		<a href="http://pinterest.com" class="fa fa-pinterest"></a>
 		<a href="http://google.com" class="fa fa-google"></a>
 		<a href="https://rss.com/" class="fa fa-rss"></a>
-
   </div>
+	
+<div style="clear:both;">
+  <div style="float:left;text-align:center;">
+ <h4 style="color:red;">Welcome <?php echo $login_session; ?><a href = "logouti.php" style="margin-left:20px;">Sign Out</a> </h4></div><br>
+	
   <div style="float: right">
     <form method="get" action="pamja.php">
 	<input type="search" name="<?php echo SEARCHBOX; ?>"     
