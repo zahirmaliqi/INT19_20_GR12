@@ -61,5 +61,25 @@ class Anetari
         
         return $memberCount;
     }
+	 function insertoRekordet($username, $email,$password)
+    {
+        $passwordHash = md5($password);
+        $query = "INSERT INTO users (emri,email,password) VALUES (?, ?, ?)";
+        $paramType = "sss";
+        $paramArray = array(
+            $username,
+			$email,   
+            $passwordHash
+            
+        );
+        $insertId = $this->ds->insert($query, $paramType, $paramArray);
+        return $insertId;
+    }
+	function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}}
 
   
