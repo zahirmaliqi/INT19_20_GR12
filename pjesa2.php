@@ -418,7 +418,7 @@ function clickCounter() {
                 <select style="background-color:#282828 ;color: white" name="cds" onchange="showCD(this.value)">
                    <option value="">color</option>
                    <option value="Red">Red</option>
-                   <option value="Balck">Balck</option>
+                   <option value="Black">Black</option>
                    <option value="White">White</option>
                    <option value="Cherry">Cherry</option>
                    <option value="Mahogany">Mahogany</option>
