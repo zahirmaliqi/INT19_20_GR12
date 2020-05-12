@@ -1,3 +1,35 @@
+
+    <?php
+	
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="myDB";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+if(isset($_POST['add'])){
+$username=$_POST['username'];
+$lastname=$_POST['lastname'];
+$code=$_POST['code'];
+$email=$_POST['email'];
+$phonenumber=$_POST['number'];
+$buy=$_POST['buy'];
+if($stmt = mysqli_prepare($conn,"INSERT INTO tiketa(username,lastname,code,email,phonenumber,buy)
+VALUES (?,?,?,?,?,?)") )
+{
+  mysqli_stmt_bind_param($stmt,"ssssss",$username,$lastname,$code,$email,$phonenumber,$buy);
+  
+  if(!mysqli_stmt_execute($stmt))
+  {
+	  die("nuk jan konfiguru te dhenat ".mysqli_error($conn));
+  }
+
+}
+}
+mysqli_close($conn);
+    ?>
+
 <html lang="en" manifest="example.appcache">
 <head>
   <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
@@ -44,14 +76,14 @@
               <input type="checkbox" name="vehicle1" value="Bike"> I accept terms and condition.</input>
 			  <span class="error"><?php echo $termsErr;?></span>
 			  <br><br>
-              <select class="sty">
+              <select name="buy" class="sty">
   <option value="Select">Select:</option>
   <option value="Ticket">Ticket</option>
  
                </select>
                <br>  
         </br>
-            <input type="submit" formmethod="post" value="BUY NOW" onclick="myFunction()"/><br><br>
+            <input type="submit" formmethod="post" value="BUY NOW" onclick="myFunction()" name="add"/><br><br>
             <h7>Please fill out all the information asked in this form!</h7>
             <script>
                 function myFunction() {
