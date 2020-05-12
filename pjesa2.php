@@ -64,7 +64,7 @@ $("document").ready(function(){
 			data: data,
 			success: function(data) {
 				$(".the-return").html(
-					"Favorite player: " + data["Favorite_player"] + "<br />Premier League: " + data["Premier_League"] + "<br />Goal: " + data["Goal"]
+					"Legend:" + data["Legend"] + "<br />League:" + data["League"] + "<br />Goal: " + data["Goal"]
 				);
 
 			}
@@ -72,6 +72,14 @@ $("document").ready(function(){
 		return false;
 	});
 });
+<style type="text/css">
+.the-return {
+	background: #800000;
+	padding: 10px;
+	margin-left:300px;
+	border-radius:10%;
+	margin-right:300px ;}
+</style>
 
 </script>
 </head>
