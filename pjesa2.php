@@ -409,7 +409,7 @@ function clickCounter() {
 
 	</div>
 	<br>
-	<a href="buyticket.php"><button class="btnbuy"  type="button">Shop now</button></a>
+	<a href="shopping.php"><button class="btnbuy"  type="button">Shop now</button></a>
 	<br><br>
 	
 	<div style="text-align:center;">
