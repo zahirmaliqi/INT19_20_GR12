@@ -46,7 +46,6 @@
 			  <br><br>
               <select class="sty">
   <option value="Select">Select:</option>
-  <option value="T-Shirt">T-Shirt</option>
   <option value="Ticket">Ticket</option>
  
                </select>
