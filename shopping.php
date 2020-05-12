@@ -124,7 +124,7 @@ if(isset($_GET["clearall"]))
    ?>
    <div class="col-md-3">
     <form method="post">
-     <div style="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">
+     <div style="border:1px solid green; background-color:#f1f1f1; border-radius:5px; padding:16px;" align="center">
       <img src="images/<?php echo $row["image"]; ?>" class="img-responsive" /><br />
 
       <h4 class="text-info"><?php echo $row["pname"]; ?></h4>
