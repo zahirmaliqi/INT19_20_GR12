@@ -425,7 +425,7 @@ function clickCounter() {
                 </select>
          </form>
          <div id="txtHint" style="color: #f94d00"><b>Wait for  your information...</b></div>
-	
+	<div>
 	<form action="return.php" class="js-ajax-php-json" method="post" accept-charset="utf-8">
            <input type="text" name="Favorite_player" value="" placeholder="Favorite player" />
            <input type="text" name="Premier_League" value="" placeholder="Premier League" />
@@ -440,6 +440,7 @@ function clickCounter() {
 <div class="the-return">
   [HTML is replaced when successful.]
 </div>
+		</div>
        </div>	
 	<hr>
 <footer>
