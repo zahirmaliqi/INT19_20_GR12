@@ -433,11 +433,13 @@ function clickCounter() {
                 </select>
          </form>
          <div id="txtHint" style="color: #f94d00"><b>Wait for  your information...</b></div>
+	<br>
 	<div>
 	<form action="return.php" class="js-ajax-php-json" method="post" accept-charset="utf-8">
-           <input type="text" name="Favorite_player" value="" placeholder="Favorite player" />
-           <input type="text" name="Premier_League" value="" placeholder="Premier League" />
-           <select name="Goal">
+           <input type="text" name="Legend" value="" placeholder="Legendr" />
+           <input type="text" name="League" value="" placeholder="League" />
+           <select name="Goal" class="custom-select" style="width:100px;">
+		   <option value="Goal">Goal</option>
                   <option value="10">10</option>
                   <option value="15">15</option>
                   <option value="30">30</option>
@@ -445,8 +447,9 @@ function clickCounter() {
            </select>
            <input type="submit" name="submit" value="Submit form"  />
         </form>
+	<br>
 <div class="the-return">
-  [HTML is replaced when successful.]
+  Know more about legends.
 </div>
 		</div>
        </div>	
