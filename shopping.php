@@ -103,16 +103,16 @@ if(isset($_GET["clearall"]))
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Webslesson Demo | Simple PHP Mysql Shopping Cart</title>
+  <title>Shopping Cart</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  </head>
- <body style=" background-image: url(only.jpeg);">
+ <body style=" background-image: url(v.jpg);">
   <br />
   <div class="container">
    <br />
-   <h3 align="center">Simple PHP Mysql Shopping Cart using Cookies</h3><br />
+   <h3 align="center" style="color:antiquewhite;font-size:50px;"> Shopping Cart</h3><br />
    <br /><br />
    <?php
    $query = "SELECT * FROM product ORDER BY id ASC";
