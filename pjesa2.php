@@ -72,6 +72,7 @@ $("document").ready(function(){
 		return false;
 	});
 });
+</script>
 <style type="text/css">
 .the-return {
 	background: #800000;
@@ -103,9 +104,25 @@ $("document").ready(function(){
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }
-</style>
+	
+.custom-select:after {
 
-</script>
+border-color: transparent transparent #fff transparent;
+top: 7px;
+}
+
+.custom-select{
+color:#ffffff;
+padding: 8px 16px;
+border:1px solid transparent;
+border-color: transparent transparent rgba(0,0,0,0.1) transparent;
+cursor: pointer;
+}
+
+.custom-select:hover{
+	background-color: #800000;
+}
+</style>
 </head>
 <header style="width: 100%">
 
@@ -460,7 +477,7 @@ function clickCounter() {
 	<br>
 	<div>
 	<form action="return.php" class="js-ajax-php-json" method="post" accept-charset="utf-8">
-           <input type="text" name="Legend" value="" placeholder="Legendr" />
+           <input type="text" name="Legend" value="" placeholder="Legend" />
            <input type="text" name="League" value="" placeholder="League" />
            <select name="Goal" class="custom-select" style="width:100px;">
 		   <option value="Goal">Goal</option>
