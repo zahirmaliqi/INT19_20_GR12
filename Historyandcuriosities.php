@@ -170,6 +170,15 @@ function getVote(int) {
 
 <p id="lokacioni"></p>
 </div>
+<div class="popup" onclick="myFunction()"style="font-weight:bold;font-size:20px;margin-left:100px;color:red;">Have a look at Corona Virus Cases Today
+<span class="popuptext" id="myPopup"><?php include("corona.php");?></span></div> 
+
+<script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 <script>
 var x = document.getElementById("lokacioni");
 
