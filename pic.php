@@ -276,11 +276,15 @@ $f = new MyClass4('20px','white','Legends');
 					  
 				  </div>
 					  <div class="flip-box-back">
-						<p>Age: <big>23</big> </p>
-						<p>Appearances: <big>3</big></p>
-						<p>Clean sheets : 3 </p>
-						<p>DATE OF BIRTH 28 Jun 1996</p>
-						<p>JOINED 1 Jul 2012</p></div></div>
+						<?php
+				
+				function familyName($appearances, $year,$age,$sheets,$join) {
+					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
+				}
+
+				familyName("243","1996","23","131","2 April 2011");
+
+				?></div></div>
 						
 					  
 					  
