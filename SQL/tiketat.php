@@ -1,28 +1,7 @@
  <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-//require_once("dbconfig.php");
-// Create connection
-/* $conn = mysqli_connect($servername, $username, $password);
+require_once "dataconfi.php";
 
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
-$sql = "CREATE DATABASE myDB";
-if (mysqli_query($conn, $sql)) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: " . mysqli_error($conn);
-} */
-$dbname = "myDB";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
+if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
 }
     // sql to create table
@@ -36,8 +15,8 @@ phonenumber VARCHAR(256)NOT NULL,
 buy VARCHAR(20)NOT NULL,
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
-    if (mysqli_query($conn, $sql)) {
-    echo "Table MyGuests created successfully";
+    if (mysqli_query($db, $sql)) {
+    echo "Table tiketa created successfully";
 } else {
-    echo "Error creating table: " . mysqli_error($conn);
+    echo "Error creating table: " . mysqli_error($db);
 }?>
