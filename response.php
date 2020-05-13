@@ -16,12 +16,18 @@ function test(){
 	$return = $_POST;
 	
 	//Informatat qe pranohen ne forma, mund te i veme kushte te ndryshme 
-	if ($return["Favorite_player"] == ""){
-		$return["Favorite_player"] = "Please enter a player ";
+	if ($return["Legend"] == "" && $return["League"] == "" && $return["Goal"] == "" ){
+		$return["Legend"]="Please enter a Legend";
+		$return["Legend"]="Please enter a League";
+		 $return["Goal"] ="X";
 	}
-	if ($return["Favorite_player"] == "Wayn"){
-		$return["Premier_League"] = "2018/2019 ";
+	
+	if ($return["Legend"] == "Ryan Giggs" && $return["Goal"] == 10 ){
+		$return["Legend"]="Ryan Giggs";
+		$return["Legend"]="FA Cup";
+		 $return["Goal"] ="10";
 	}
+	
 	
 	$return["json"] = json_encode($return);
 	echo json_encode($return);
