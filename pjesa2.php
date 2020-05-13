@@ -79,6 +79,30 @@ $("document").ready(function(){
 	margin-left:300px;
 	border-radius:10%;
 	margin-right:300px ;}
+	
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.custom-select {
+  background-color:#B22222;
+}
+
+.custom-select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
 </style>
 
 </script>
