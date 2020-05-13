@@ -62,7 +62,7 @@
 </style>
     </style>
  <div id="tedhenat">       
-<h2 style="font-family: Times New Roman, Times, serif;"  >Thank you</h2> <?php
+<h2 style="font-family: Times New Roman, Times, serif;"  >Thank you</h2> 
 <?php
 //Realizimi i enkapsulimit permes Get dhe Set
 class MyClass
