@@ -196,11 +196,11 @@ $f = new MyClass4('20px','white','Legends');
 			<div class="flip-box-back" >
 			 	<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari1($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("380","1990","29","131","2 Jul 2011");
+				lojtari1("380","1990","29","131","2 Jul 2011");
 
 				?></div>
 			  
@@ -223,11 +223,11 @@ $f = new MyClass4('20px','white','Legends');
 			  <div class="flip-box-back" >
 				<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari2($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("200","1975","36","111","23 August 2010");
+				lojtari2("200","1975","36","111","23 August 2010");
 
 				?></div>
 				
@@ -250,11 +250,11 @@ $f = new MyClass4('20px','white','Legends');
 				  <div class="flip-box-back">
 					<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari3($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("380","1987","32","131","2 Jul 2011");
+				lojtari3("380","1987","32","131","2 Jul 2011");
 
 				?></div>
 					
@@ -278,11 +278,11 @@ $f = new MyClass4('20px','white','Legends');
 					  <div class="flip-box-back">
 						<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari4($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("243","1996","23","131","2 April 2011");
+				lojtari4("243","1996","23","131","2 April 2011");
 
 				?></div></div>
 						
@@ -324,11 +324,11 @@ $f = new MyClass4('20px','white','Legends');
 		<div class="flip-box-back">
 		  <?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari5($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("541","1994","25","131","5 November 2009");
+				lojtari5("541","1994","25","131","5 November 2009");
 
 				?></div>
 		  
@@ -351,11 +351,11 @@ $f = new MyClass4('20px','white','Legends');
 		  <div class="flip-box-back" >
 			<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari6($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("298","1990","29","131","30 March 2016");
+				lojtari6("298","1990","29","131","30 March 2016");
 
 				?></div>
 			
@@ -378,11 +378,11 @@ $f = new MyClass4('20px','white','Legends');
 			  <div class="flip-box-back">
 				<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari7($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("380","1992","27","131","2 Jul 2011");
+				lojtari7("380","1992","27","131","2 Jul 2011");
 
 				?></div>
 				
@@ -668,11 +668,11 @@ $f = new MyClass4('20px','white','Legends');
 		<div class="flip-box-back">
 		 <?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari8($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("400","1990","29","200","8 June 2015");
+				lojtari8("400","1990","29","200","8 June 2015");
 
 				?></div>
 		  
@@ -719,11 +719,11 @@ $f = new MyClass4('20px','white','Legends');
 			  <div class="flip-box-back">
 				<?php
 				
-				function familyName($appearances, $year,$age,$sheets,$join) {
+				function lojtari9($appearances, $year,$age,$sheets,$join) {
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				familyName("198","1990","29","104","13 December 2010");
+				lojtari9("198","1990","29","104","13 December 2010");
 
 				?></div>
 				
