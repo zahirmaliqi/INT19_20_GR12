@@ -6,7 +6,7 @@ $name=$lastname = $number = $email = $code =$terms=$buy="";
 
 if(isset($_POST['add'])) {
 	
-	include("dataconfi.php");
+	include("SQL/dataconfi.php");
 	$error = false;
   if (empty($_POST["username"])) {
     $nameErr = "*Name is required";
