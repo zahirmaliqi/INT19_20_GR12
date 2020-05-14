@@ -3,7 +3,7 @@ include_once("index.php");
 ?>
 
 <?php
-   include("signupandLogin/dataconfi.php");
+   include("SQL/dataconfi.php");
 if(!isset($_SESSION)) 
     { 
         session_start(); 
@@ -62,7 +62,7 @@ setcookie ("user_password",$_REQUEST["password"],time()+ (10 * 365 * 24 * 60 * 6
 	 <?php echo $output; ?>
         </form>
 		<h5 style="padding:10px;">  Don't have an account? <a href="signup.php">Sign up!</a></h5>
-	
+	<h5><a href="forgot.php" style="color:red;"> Forgot your password? Reset it now!</a></h5>
 </div>
 
     </body>
