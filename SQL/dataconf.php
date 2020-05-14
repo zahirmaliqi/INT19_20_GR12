@@ -7,7 +7,7 @@ define("password","");
 
 $conn=mysqli_connect(servername,username,password,dbname);
 if(!$conn){
-	die("Konektimi i deshtuar".mysql_connect_error());
+	die("Konektimi i deshtuar".mysqli_connect_error());
 }
 
 ?>
