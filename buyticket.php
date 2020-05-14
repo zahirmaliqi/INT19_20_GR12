@@ -1,9 +1,7 @@
 <?php
 	 ini_set("display_errors", 1);
     error_reporting(E_ALL);
-
-
-	 $nameErr=$lastErr = $numberErr = $emailErr = $codeErr = $termsErr =$buyErr="";
+ $nameErr=$lastErr = $numberErr = $emailErr = $codeErr = $termsErr =$buyErr="";
 $name=$lastname = $number = $email = $code =$terms=$buy="";
 
 if(isset($_POST['add'])) {
@@ -79,9 +77,15 @@ if(!preg_match('/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/',$email))
 	  $email=$_POST["email"];
 	  $code=hash('md5',$_POST["code"]);
 	  $buy=$_POST["buy"];
-      $terms = $_POST["vehicle1"];
-  
-$buy=$_POST['buy'];
+          $terms = $_POST["vehicle1"];  
+          $buy=$_POST['buy'];
+   $sel_query = "SELECT * FROM users WHERE email='".$email."' and password='".$code."' and emri='".$name."'";
+   $results = mysqli_query($db,$sel_query);
+   $row = mysqli_num_rows($results);
+   if ($row==""){
+   echo "This user is not registered<br>Please check your name, email or password!";
+   }
+ else{
 if($stmt = mysqli_prepare($db,"INSERT INTO tiketa(username,lastname,code,email,phonenumber,buy) VALUES (?,?,?,?,?,?)") );
 {
   mysqli_stmt_bind_param($stmt,"ssssss",$name,$lastname,$code,$email,$number,$buy); 
@@ -93,7 +97,7 @@ if($stmt = mysqli_prepare($db,"INSERT INTO tiketa(username,lastname,code,email,p
 echo "You are registered successfully $name $lastname <br> To get your $buy please email us at rrezeartathaqi@hotmail.com";
 
 }
-
+ }
 }
 mysqli_close($db);
 }
