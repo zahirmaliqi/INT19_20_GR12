@@ -15,22 +15,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-	$(document).ready(function(){
-    var d = new Date();
-    var n = d.getHours();
-    if (n > 19 || n < 6)
-//Nese ora eshte mbas 19:00 ose para 06:00 ,aplikohet class "night" 
-      document.body.className = "night";
-    else if (n > 16 && n < 19)
-  //Nese koha eshte ne mes 16:00 - 19:00 aplikohet class "sunset"
-      document.body.className = "sunset";
-    else
-      //Raste tjera aplikohet class "day"
-      document.body.className = "day";
-});
-
-	
-
   $(document).ready(function(){
   $(".fontshadow").css("color", "#FFA500");
 });
