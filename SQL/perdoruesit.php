@@ -32,15 +32,19 @@ if(!$conn){
 	die("Konektimi ka deshtuar ".mysqli_connect_error());
 }
 
-$sql="CREATE TABLE users (
+/* $sql="CREATE TABLE users (
    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
    emri VARCHAR(50) NOT NULL,
    mbiemri VARCHAR(50),
    email VARCHAR(50),
    password VARCHAR(50),
    data_regjistrimit TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
-)";
-
+)";*/
+$sql="CREATE TABLE temp_reseto (
+  `email` varchar(250) NOT NULL,
+  `key` varchar(250) NOT NULL,
+  `expDate` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1";
  if(!mysqli_query($conn,$sql)){
 	
 	die("<br>Tabela nuk mund te krijohet! ".mysqli_error($conn));
