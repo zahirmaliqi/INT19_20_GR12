@@ -595,12 +595,15 @@ $f = new MyClass4('20px','white','Legends');
 		  
 	  </div>
 		  <div class="flip-box-back" >
-			<p>Age: <big>22</big> </p>
-			<p>Appearances: <big>21</big></p>
-			
-			<p>DATE OF BIRTH
-				2 JAN 1998</p>
-			<p>JOINED 2 SEP 2014</p></div>
+			<?php
+				
+				function lojtari35($appearances, $year,$age,$sheets,$join) {
+					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
+				}
+
+				lojtari35("380","1990","29","131","2 Jul 2011");
+
+				?></div>
 			
 		</div>
 		  
