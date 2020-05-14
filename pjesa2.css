@@ -1,42 +1,4 @@
-.night{
-      animation: colorchange 10s; 
-      -webkit-animation: colorchange 10s; 
-    }
 
-    .sunset{
-      animation: colorchange1 10s; 
-      -webkit-animation: colorchange1 10s; 
-    }
-
-
-    .sunset{
-      animation: colorchange2 10s; 
-      -webkit-animation: colorchange2 10s; 
-    }
-
-@keyframes colorchange
-    {
-      0%   {background: -webkit-linear-gradient(right,pink,black,black,#696969);;}
-      50%  {background: black;}
-      100%  {background: black;}
-      
-    }
-
-@keyframes colorchange1
-    {
-      0%   {background: -webkit-linear-gradient(right,black,red,black,#696969);;}
-      50%  {background: black;}
-      100%  {background: black;}
-      
-    }
-
-    @keyframes colorchange2
-    {
-      0%   {background: -webkit-linear-gradient(right,red,black,red,black,#696969);;}
-      50%  {background: black;}
-      100%  {background: black;}
-      
-    }
 .con {
   position: relative;
 }
