@@ -7,7 +7,6 @@ $value = "";
  return $value;  }
 function getDB() {   
 
- require_once("SQL/dbconfigi.php");  
 $conn=new PDO("mysql:host=".servername.";dbname=lajmet",username,password);
 $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION); 
 return $conn; }
