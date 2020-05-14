@@ -127,6 +127,12 @@ if ($st) {
 	<?php
 		echo substr("WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER",0,34)."<br>";
 	?>
+	<form method="post" action="">
+		<label for="color">Background color: </label>
+		<input type="text" name="color"/>
+		<input type="submit" name="submit" value="Change color">
+
+	</form>	
 	
 	</p>
 	
