@@ -16,15 +16,15 @@ function test(){
 	$return = $_POST;
 	
 	//Informatat qe pranohen ne forma, mund te i veme kushte te ndryshme 
-	if ($return["Legend"] == "" && $return["League"] == "" && $return["Goal"] == "" ){
+	if ($return["Legend"] == "" && $return["League"] == "" && $return["Goal"] == "Goal" ){
 		$return["Legend"]="Please enter a Legend";
-		$return["Legend"]="Please enter a League";
+		$return["League"]="Please enter a League";
 		 $return["Goal"] ="X";
 	}
 	
 	if ($return["Legend"] == "Ryan Giggs" && $return["Goal"] == 10 ){
 		$return["Legend"]="Ryan Giggs";
-		$return["Legend"]="FA Cup";
+		$return["League"]="FA Cup";
 		 $return["Goal"] ="10";
 	}
 	
