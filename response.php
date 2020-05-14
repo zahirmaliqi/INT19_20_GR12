@@ -28,6 +28,21 @@ function test(){
 		 $return["Goal"] ="10";
 	}
 	
+	if ($return["Legend"] == "Wayn Rooney" ){
+		$return["League"]="Europe Cup";
+	}
+
+	if ($return["League"] == "Europe Cup"  && $return["Goal"] == 15){
+		$return["Legend"]="Jack Rowley";
+	}
+
+	if ($return["Legend"] == "Dennis Viollet"){
+		$return["Legend"]="Dennis Viollet";
+		$return["League"]="FA Cup";
+		 $return["Goal"] ="58";
+	}
+
+	
 	
 	$return["json"] = json_encode($return);
 	echo json_encode($return);
