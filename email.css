@@ -1,8 +1,16 @@
 body
 {
    font-family:  Tahoma,Geneva,sans-serif;
-    color: #fff;}
-   
+    color: #fff;
+        background-image:url(ekipii.jpg);
+    background-size: cover;
+	  background-attachment: fixed;
+  background-position: center; 
+    
+}
 h3,p{
 text-align:center;
+
+
+
 }
