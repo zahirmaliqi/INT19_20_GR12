@@ -19,4 +19,7 @@ if($_POST)
     WHERE question_number = $number AND is_correct = 1";
     $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
     $row = $result->fetch_assoc();
+    $correct_choice = $row['id'];
+
+    if($correct_choice == $selected_choice)
     
