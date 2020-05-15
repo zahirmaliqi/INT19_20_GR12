@@ -13,4 +13,5 @@ if($_POST)
     $next = $number+1;
   //get total question
     $query="SELECT * FROM `questions` ";
-    
+     $results = $mysqli->query($query) or die($mysqli->error.__LINE__);
+    $total= $results->num_rows;
