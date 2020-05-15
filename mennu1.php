@@ -67,12 +67,7 @@
     <div id="temp" >Template by OS Templates</div>
     </div>
 	<br>
-                <?php
-                session_start();
-                echo "<a href='logout.php'>LOGOUT</a>";
-
-
-                ?>
+             
                 <br>
 
 
