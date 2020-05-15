@@ -404,11 +404,15 @@ $f = new MyClass4('20px','white','Legends');
 		
 	</div>
 		<div class="flip-box-back">
-		  <p>Age: <big>18</big> </p>
-		  <p>COUNTRY SPAIN</p>
-		  
-		  <p>DATE OF BIRTH 15 MAR 2001</p>
-			<p>JOINED 8 AUG 2017</p></div>
+		 	<?php
+				
+				function rinia9($appearances, $year,$age,$sheets,$join) {
+					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
+				}
+
+				rinia9("380","1990","29","131","2 Jul 2011");
+
+				?></div>
 		  
 		
 		</div></div>
