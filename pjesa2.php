@@ -171,7 +171,7 @@ if ($st) {
 		echo substr("WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER",0,34)."<br>";
 	?>
 	<form method="post" action=""  style="text-align: center;">
-		<label for="color" style="font-size: 20px; >Background color: </label>
+		<label for="color" style="font-size: 20px; color: #8B0000" >Background color: </label>
 		<input type="text" name="color"/>
 		<input type="submit" name="submit" class="subbut" value="Change color">
 
