@@ -5,7 +5,13 @@ session_start();
 if (isset($_POST['submit']) ) {
 	$color=htmlentities($_POST['color'], ENT_QUOTES);
 
+	if(strlen($color) !== 6 ) 
+	{
+		echo "Six characters please";
+		} else {
 		 $_SESSION['color'] = $color;
+	} 
+		
 	
 } 
 
