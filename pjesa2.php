@@ -106,6 +106,10 @@ cursor: pointer;
 .custom-select:hover{
 	background-color: #800000;
 }
+
+body{
+	background-color:black;
+}
 </style>
 </head>
  <?php include("menuu.php"); ?>
@@ -127,7 +131,7 @@ if ($st) {
 	<?php
 		echo substr("WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER",0,34)."<br>";
 	?>
-	<form method="post" action="">
+	<form method="post" action=""  style="text-align: center;">
 		<label for="color">Background color: </label>
 		<input type="text" name="color"/>
 		<input type="submit" name="submit" value="Change color">
