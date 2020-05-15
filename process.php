@@ -11,3 +11,6 @@ if($_POST)
  $number = $_POST['number'];
     $selected_choice = $_POST['choice'];
     $next = $number+1;
+  //get total question
+    $query="SELECT * FROM `questions` ";
+    
