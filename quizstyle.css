@@ -1,0 +1,42 @@
+body{
+    font-family: arial;
+    font-size: 15px;
+    line-height: 1.6cm;
+    
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container
+{
+    width:60%;
+    margin:0 auto;
+    overflow: auto;
+
+}
+
+
+main{
+    padding-bottom:20px;
+}
+a.start{
+    display:inline-block;
+    color:black;
+    background: rgb(184, 3, 3);
+    border: rgb(184, 3, 3);
+    border:1px dotted #000;
+    padding:1px 13px;
+    
+}
+.current{
+    padding: 10px;
+    background: rgb(184, 3, 3);
+    border:black dotted 3px;
+    margin:20px 0 10px 0;
+
+}
