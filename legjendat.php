@@ -195,6 +195,97 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "  " . mysqli_error($conn);
 }
+$sql =" INSERT INTO questions (question_number,text) VALUES
+(1, 'What is the name of Manchester Uniteds home ground?'),
+(2, 'When David Beckham played for United, which number did he wear?'),
+(3, 'Who was the manager before Ole Gunnar Solskjaer?'),
+(4, 'Who was Uniteds top goalscorer in the 2018/19 season?'),
+(5, 'What is Manchester Uniteds nickname?'),
+(6, 'How many times have Man United won the FA Cup?'),
+(7, 'Who is Manchester Uniteds all time top goalscorer?'),
+(8, 'What nickname did United fans give to Eric Cantona?'),
+(9, 'In what year did Manchester United sign David de Gea?'),
+(10, 'Manchester United released a song called :Come On You Reds in 1994 where did it place in the UK singles chart?')";
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+
+
+
+$sql = "CREATE TABLE choices (
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    question_number INT(11) NOT NULL,
+    is_correct TINYINT(1) NOT NULL DEFAULT '0',
+    text TEXT
+    
+  
+    )";
+    
+    if (mysqli_query($conn, $sql)) {
+        echo " ";
+    } else {
+        echo "  " . mysqli_error($conn);
+    }
+    $sql =" INSERT INTO choices (question_number,is_correct,text) VALUES
+    (1,0,'Bramall Lane'),
+    (1,0,'Elland Road'),
+    (1,1,'Old Trafford'),
+    (1,0,'ST James s Park'),
+
+    (2,0,'26'),
+    (2,1,'7'),
+    (2,0,'8'),
+    (2,0,'19'),
+
+    (3,1,'Jose Mourinho'),
+    (3,0,'Louis Van Gaal'),
+    (3,0,'David Moyes'),
+    (3,0,'Alex Ferguson'),
+
+    (4,0,'Marcus Rashford'),
+    (4,0,'Juan Mata'),
+    (4,0,'Anthony Martial'),
+    (4,1,'Paul Pogba'),
+
+    (5,0,'The Reds'),
+    (5,0,'The Blades'),
+    (5,1,'Red Devils'),
+    (5,0,'The Toffees'),
+
+    (6,0,'10'),
+    (6,0,'11'),
+    (6,1,'12'),
+    (6,0,'13'),
+
+    (7,0,'Wayne Rooney'),
+    (7,0,'Bobby Charlton'),
+    (7,1,'Ryan Giggs'),
+    (7,0,'Mark Hughes'),
+
+    (8,0,'God'),
+    (8,0,'The Magician'),
+    (8,0,'The Flying Frenchman'),
+    (8,1,'King Eric'),
+
+    (9,1,'2011'),
+    (9,0,'2012'),
+    (9,0,'2013'),
+    (9,0,'2014'),
+
+    (10,1,'1'),
+    (10,0,'10'),
+    (10,0,'43'),
+    (10,0,'99')";
+    if ($conn->query($sql) === TRUE) {
+      echo "New record created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    
+?>
 
 
 	<div class="grid-container">
