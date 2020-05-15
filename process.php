@@ -22,4 +22,11 @@ if($_POST)
     $correct_choice = $row['id'];
 
     if($correct_choice == $selected_choice)
-    
+      {
+        $_SESSION['score']++;
+    }
+;
+ if($number == $total)
+    {
+        header("Location: final.php");
+        exit();
