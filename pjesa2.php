@@ -1,3 +1,20 @@
+<?php 
+
+session_start();
+
+if (isset($_POST['submit']) ) {
+	$color=htmlentities($_POST['color'], ENT_QUOTES);
+
+		 $_SESSION['color'] = $color;
+	
+} 
+
+
+ ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" manifest="example.appcache">
 <link rel="stylesheet" type="text/css" href="pjesa2.css">
