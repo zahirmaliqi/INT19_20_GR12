@@ -58,7 +58,7 @@ if(!$conn){
 //$sql="CREATE TABLE lajmet (
 //   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
  //  titullilink VARCHAR(100) NOT NULL,
- //  pershkrimi VARCHAR(50),
+ //  pershkrimi VARCHAR(300),
 //   data_regjistrimit TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 //)";
  
