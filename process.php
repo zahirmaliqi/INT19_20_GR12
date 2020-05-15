@@ -30,3 +30,8 @@ if($_POST)
     {
         header("Location: final.php");
         exit();
+  }
+    else{header("Location: question.php?n=".$next);
+    }
+}
+?>
