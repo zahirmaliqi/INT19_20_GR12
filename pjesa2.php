@@ -8,7 +8,10 @@ if (isset($_POST['submit']) ) {
 	if(strlen($color) !== 6 ) 
 	{
 		echo "Six characters please";
-		} else {
+	} else if (preg_match('#[^0-9a-f]#i',$color))
+	{
+		echo "Only letter a to f (A to F) and numbers";
+	} else {
 		 $_SESSION['color'] = $color;
 	} 
 		
