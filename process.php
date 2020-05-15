@@ -8,4 +8,6 @@ $_SESSION['score'] = 0;
 }
 if($_POST)
 {
-
+ $number = $_POST['number'];
+    $selected_choice = $_POST['choice'];
+    $next = $number+1;
