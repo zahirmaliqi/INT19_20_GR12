@@ -66,6 +66,6 @@ if(isset($accessToken)){
     $permissions = ['email']; 
     $loginURL = $helper->getLoginUrl(FB_REDIRECT_URL, $permissions);
   
-    $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="fcb.png" width="200px"></a>';
+    $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="fcbi.png" width="200px"></a>';
 }
 ?>
