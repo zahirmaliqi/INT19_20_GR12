@@ -25,7 +25,7 @@
 	   <?php    } }  ?>
 	  
 </div>
-	 <?php include("menuu1.php"); ?>
+	 <?php include("mennu1.php"); ?>
 
 </body>
 
