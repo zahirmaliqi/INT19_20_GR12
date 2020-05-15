@@ -35,7 +35,6 @@ if(!$conn){
 /* $sql="CREATE TABLE users (
    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
    emri VARCHAR(50) NOT NULL,
-   mbiemri VARCHAR(50),
    email VARCHAR(50),
    password VARCHAR(50),
    data_regjistrimit TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
