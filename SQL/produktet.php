@@ -10,7 +10,7 @@ if($conn->connect_error){
 }
 echo "Konektimi i suksesshem";
 
-$sql="CREATE DATABASE signupusers";
+$sql="CREATE DATABASE product_details";
 
 $conn->query($sql);
 
@@ -25,28 +25,22 @@ $conn->close(); */
 //$conn=mysqli_connect(servername,username,password,dbname);
 
 	 //$query="INSERT INTO product(pname,image,price)
-	// VALUES('Adidas F.C Home','m1.jpeg','350')";
+	// VALUES('Adidas F.C Home','m1.jpeg','350');";
 	// $query.="INSERT INTO product(pname,image,price)
 	 //VALUES('Adidas F.C Home','u2.jpeg','450');"; */
- // $query="INSERT INTO product(pname,image,price)
-	//VALUES('Adidas F.C Home','m1.jpeg','350')";
-   // $query="INSERT INTO product(pname,image,price)
-	//VALUES('Adidas F.C Home','m1.jpeg','350')";
+ // $query.="INSERT INTO product(pname,image,price)
+	//VALUES('Adidas F.C Home','m1.jpeg','350');";
+   // $query.="INSERT INTO product(pname,image,price)
+	//VALUES('Adidas F.C Home','m1.jpeg','350');";
 
 	// $result=mysqli_multi_query($conn,$query);
 	// if(!$result){
 	//	 die("NUK shtohen tdhenat ".mysqli_error($conn));
 	// }
 	// echo "Lajmi eshte shtuar";
- 
-
-
  mysqli_close($conn);
 
  
-
-
-
  $conn=mysqli_connect(servername,username,password,dbname);
 
 if(!$conn){
