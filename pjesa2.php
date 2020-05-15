@@ -134,7 +134,7 @@ cursor: pointer;
 }
 
 body{
-	background-color:black;
+	background-color: <?php echo(isset($_SESSION['color']))?'#' . $_SESSION['color']:'#800000'; ?>;
 }
 </style>
 </head>
