@@ -153,19 +153,48 @@ $f = new MyClass4('20px','white','Legends');
 
 ?>
 </a></li></ol></div>
- <canvas id="myCanvas" width="170" height="60"
- style="border:4px solid black;border-radius:20px;background-color:rgb(238, 224, 28);
- padding-bottom:5px">
- 
- </canvas>
- 
- <script>
- var canvas = document.getElementById("myCanvas");
- var ctx = canvas.getContext("2d");
- ctx.font = "30px Arial";
- ctx.strokeText("LEGENDS" ,10,50);
- </script>
+<a href="quiz.php"><button type="button" style="padding:2px 15px;font-size:20px;font-weight:700;background: yellow;border-radius:30px;color:black;">Play Quiz!<small>&gt;&gt;</small></button></a>
 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+//require_once("dbconfig.php");
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+    die(" " . mysqli_connect_error());
+}
+echo " ";
+$sql = "CREATE DATABASE quizzer";
+if (mysqli_query($conn, $sql)) {
+    echo " ";
+} else {
+    echo "  " . mysqli_error($conn);
+}
+$dbname = "quizzer";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("  " . mysqli_connect_error());
+}
+
+// sql to create table Pas KRIJIMIT TE TABELES TE KOMENTOHET PJESA E CREATE DATABASE DHE CREATE TABLE EDHE INSERTIMI I VALUVE 
+$sql = "CREATE TABLE questions (
+question_number INT(11)  PRIMARY KEY,
+text TEXT
+
+)";
+
+if (mysqli_query($conn, $sql)) {
+    echo " ";
+} else {
+    echo "  " . mysqli_error($conn);
+}
 
 
 	<div class="grid-container">
