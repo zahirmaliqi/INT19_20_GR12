@@ -136,6 +136,19 @@ cursor: pointer;
 body{
 	background-color: <?php echo(isset($_SESSION['color']))?'#' . $_SESSION['color']:'#800000'; ?>;
 }
+	
+.subbut{
+  background-color: #800000;
+  border: none;
+  color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
 </style>
 </head>
  <?php include("menuu.php"); ?>
@@ -158,9 +171,9 @@ if ($st) {
 		echo substr("WE WIN TOGETHER  WE LOSE TOGETHER WE ARE UNITED FOREVER",0,34)."<br>";
 	?>
 	<form method="post" action=""  style="text-align: center;">
-		<label for="color">Background color: </label>
+		<label for="color" style="font-size: 20px; >Background color: </label>
 		<input type="text" name="color"/>
-		<input type="submit" name="submit" value="Change color">
+		<input type="submit" name="submit" class="subbut" value="Change color">
 
 	</form>	
 	
