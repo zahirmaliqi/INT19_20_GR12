@@ -1,7 +1,5 @@
 <?php
 
-use permbajtja;
-
 class Anetari
 {
     private $dbConn;
