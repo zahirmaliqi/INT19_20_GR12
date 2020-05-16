@@ -124,7 +124,7 @@ $f = new MyClass;
 echo $f->customize_print();
 ?>
 </div>
-	       <a href="Tickets.html"><button type="button">VIEW THE FIXTURES<small>&gt;&gt;</small></button></a>
+	       <a href="Tickets.php"><button type="button">VIEW THE FIXTURES<small>&gt;&gt;</small></button></a>
 <hr id="hr2">
 <br/>
 <br/>
