@@ -1,6 +1,6 @@
 <?php 
 
-session_start();
+if(session_status() == PHP_SESSION_ACTIVE) session_start();
 
 if (isset($_POST['submit']) ) {
 	$color=htmlentities($_POST['color'], ENT_QUOTES);
@@ -13,16 +13,9 @@ if (isset($_POST['submit']) ) {
 		echo "Only letter a to f (A to F) and numbers";
 	} else {
 		 $_SESSION['color'] = $color;
-	} 
-		
-	
+	} 	
 } 
-
-
  ?>
-
-
-
 
 <!DOCTYPE html>
       <html lang="en" manifest="example.appcache">
