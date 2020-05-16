@@ -35,7 +35,7 @@ setcookie ("user_password",$_REQUEST["password"],time()+ (10 * 365 * 24 * 60 * 6
          header("location: Faqja1.php");
       }
 	  else {
-         echo "Your Login Email or Password is invalid";
+         echo "<h4 style='color:red;'>Your Login Email or Password is invalid. Please try again!</h4>";
       }
    }
   
