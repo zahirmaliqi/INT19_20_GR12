@@ -110,6 +110,27 @@
                 
         </div>
 	<br>
+	 <?php
+ 
+$now = new DateTime('today');
+$new_seas = new DateTime('2 July 2020');
+ 
+while($now > $new_seas) {
+    $new_seas->add(new DateInterval('P1Y'));
+}
+ 
+if($now < $new_seas) {
+    $interval = $now->diff($new_seas);
+    echo $interval->format('%a days').' until next season!';
+}
+ 
+if($now == $new_seas) {
+    echo 'Finally... Happy new season!';
+}
+ 
+ 
+?>
+	
 	    
           
       
