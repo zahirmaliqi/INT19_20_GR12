@@ -124,6 +124,14 @@ As the Luis van, Gaal becomes the first non Britisher manager of the red devils.
 	   public $string_name = "Here are some songs for Manchester United:";
    public $string_name2 ="Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.";
    public function customize_print()
+	   {
+   echo "<strong><p style=font-size:".$this->font_size.";color:".$this->font_color.";font-family:".$this->font_family.";>".$this->string_name."</p></strong>";
+   
+   }
+  }
+  $f = new MyClass;
+  echo $f->customize_print();
+  ?>
 	  
   <audio controls>
   <source src="ManUTDSong.mp3" type="audio/mpeg">
