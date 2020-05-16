@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="style1.css">
-	 <link rel="stylesheet" href="titulli.css">
-	<link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="titulli.css">
+    <link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>Homepage-Man Utd</title>
+
+<style>
+      @font-face {
+        font-family: clock;
+        src: url(digital-7.ttf);
+      }
+
+#time{
+     width: 100%;
+     margin: 0 auto;
+     font-family: clock;
+     font-size: 20px;
+	}
+      
+
+   </style>
     
   </head>
 
@@ -28,8 +46,17 @@ if ($st) {
     echo "<img  src='no_int.gif' style='width:100px;height:100px;' />";
 }
 ?>
+	  
+<span style="color: white;"  id="time"> 00:00:00 AM </span>
+    <script>
+           $(document).ready(function(){
+           setInterval(function(){
+           $('#time').load('time.php')
+           },1000)
+      });
+  </script>
 	 
-		    <div class="mySlides fade">
+<div class="mySlides fade">
   <img src="azk.jpeg" style="width:100%">
   <div class="text">Paul Pogba has been conspicuous in his absence from Manchester
 	  United's starting line-up this season and now the World Cup winner faces
