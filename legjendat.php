@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="legjendastyle.css">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-	<title>Document</title>
+	<title>Legend Gallery</title>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
