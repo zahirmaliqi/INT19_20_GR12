@@ -125,7 +125,11 @@
 	    {
    echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";font-family:".$this->font_family.";>".$this->string_name."</p>";
     echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";font-family:".$this->font_family.";>".$this->string_name2."</p>";
-   
+     }
+  }
+  $f = new MyClass;
+  echo $f->customize_print();
+  ?>
             <br/>
             
            <a href="buyticket.php"> <button id="button1" type="button" >
