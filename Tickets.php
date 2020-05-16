@@ -112,9 +112,13 @@
           
       
         </div>
-        <p id="text">There are two ways to buy tickets for Premier League home games at Old Trafford. 
- 
-            Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.</p>
+      <?php 
+  
+  class Myclass
+  {
+   public $font_size ="40px";
+   public $font_color = "grey";
+   public $font_family="Times New Roman, Times, serif";
             <br/>
             
            <a href="buyticket.php"> <button id="button1" type="button" >
