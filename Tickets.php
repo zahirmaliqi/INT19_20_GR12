@@ -146,19 +146,19 @@
 
           
 <div class="mySlides" >
-    <a href="video.html">
+    <a href="video.php">
     <img id="you" src="youtube.gif" > 
     </a>
   </div>
   
   <div class="mySlides">
-    <a href="video.html">
+    <a href="video.php">
     <img id="you"src="lala.jpg" >
     </a>
   
   </div>
   <div class="mySlides" >
-    <a href="video.html">
+    <a href="video.php">
     <img id="you"src="mali.jpg" >
     </a>
   
