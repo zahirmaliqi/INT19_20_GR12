@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="stylmac.css">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Document</title>
+    <title>Rinia Gallery</title>
     
   </head>
 
