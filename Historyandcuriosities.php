@@ -193,7 +193,13 @@ function getVote(int) {
 </div>
 
 <div>
-<p>Click the button to get your coordinates.</p>
+<?php 
+  
+  class Myclass2
+  {
+   public $font_size ="15px";
+   public $font_color = "black";
+   public $font_family="Times New Roman, Times, serif";
 
 <button onclick="getLocation()" id="button1">Get your coordinates</button>
 
