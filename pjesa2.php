@@ -148,6 +148,12 @@ body{
   margin: 2px 2px;
   cursor: pointer;
 }
+	
+@font-face {
+    font-family: clock;
+    src: url(digital-7.ttf);
+  }
+	
 </style>
 </head>
  <?php include("menuu.php"); ?>
