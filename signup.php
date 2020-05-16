@@ -17,7 +17,7 @@ if (! empty($_POST["regjistro"])) {
         if ($memberCount == 0) {
             $insertId = $member->insertoRekordet($username,$email,$password);
             if (!empty($insertId)) {
-                header("Location: login1.php");
+                header("refresh:1;url=login1.php");
             }
         } else {
             $errorMessage[] = "User already exists.";
