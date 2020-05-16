@@ -31,7 +31,7 @@ $conn->close(); */
  // $query.="INSERT INTO product(pname,image,price)
 	//VALUES('Adidas F.C Home','m1.jpeg','350');";
    // $query.="INSERT INTO product(pname,image,price)
-	//VALUES('Adidas F.C Home','m1.jpeg','350');";
+	//VALUES('Adidas F.C Home','u4.jpeg','350');";
 
 	// $result=mysqli_multi_query($conn,$query);
 	// if(!$result){
