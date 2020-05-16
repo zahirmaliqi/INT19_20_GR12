@@ -114,7 +114,15 @@ As the Luis van, Gaal becomes the first non Britisher manager of the red devils.
  </div> 
 		   </div>
 	<div style="background:-webkit-linear-gradient(left,white,white,white,red);padding:20px;">
-<h2 style="color:red;text-align:center;">Here are some songs for Manchester United:</h2>
+<?php 
+  
+  class Myclass
+  {
+   public $font_size ="25px";
+   public $font_color = "red";
+   public $font_family="Times New Roman, Times, serif";
+	  
+	  
   <audio controls>
   <source src="ManUTDSong.mp3" type="audio/mpeg">
 </audio>
