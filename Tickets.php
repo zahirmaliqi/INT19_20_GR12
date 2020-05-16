@@ -119,6 +119,9 @@
    public $font_size ="40px";
    public $font_color = "grey";
    public $font_family="Times New Roman, Times, serif";
+   public $string_name = "-------There are two ways to buy tickets for Premier League home games at Old Trafford.-----";
+   public $string_name2 ="Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.";
+   public function customize_print()
             <br/>
             
            <a href="buyticket.php"> <button id="button1" type="button" >
