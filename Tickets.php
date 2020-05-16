@@ -122,6 +122,10 @@
    public $string_name = "-------There are two ways to buy tickets for Premier League home games at Old Trafford.-----";
    public $string_name2 ="Alternatively, you can guarantee a seat to any home game with a Matchday VIP Experience.";
    public function customize_print()
+	    {
+   echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";font-family:".$this->font_family.";>".$this->string_name."</p>";
+    echo "<p style=font-size:".$this->font_size.";color:".$this->font_color.";font-family:".$this->font_family.";>".$this->string_name2."</p>";
+   
             <br/>
             
            <a href="buyticket.php"> <button id="button1" type="button" >
