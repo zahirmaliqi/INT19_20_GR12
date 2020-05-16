@@ -25,16 +25,15 @@ if (isset($_POST['submit']) ) {
 
 
 <!DOCTYPE html>
-<html lang="en" manifest="example.appcache">
-<link rel="stylesheet" type="text/css" href="pjesa2.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style1.css">
-	 
-	 <link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
+      <html lang="en" manifest="example.appcache">
+      <link rel="stylesheet" type="text/css" href="pjesa2.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style1.css">
+      <link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
 	 
 <head>
-	<title></title>
+	<title>Players</title>
 	<script src="exjs.js"></script>
 	<script src="jscript.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
