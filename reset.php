@@ -10,12 +10,20 @@ if (isset($_GET["key"]) && isset($_GET["email"]) && isset($_GET["action"])
   );
   $row = mysqli_num_rows($query);
   if ($row==""){
-  $error .= '<h2>Invalid Link</h2>
-<p>The link is invalid/expired. Either you did not copy the correct link
-from the email, or you have already used the key once.</p>
-<p><a href="forgot.php">
-Click here</a> to reset password.</p>';
- }else{
+echo "
+ <html>
+<head>
+  <meta http-equiv='content-type' content='text/html'; charset='utf-8'/>
+    <title>Fail!</title>
+    <link href='signup.css' rel='stylesheet' type='text/css'/>
+<body><br><br><h2 style='color:red;text-align:center;'>Invalid Link</h2>
+<p style='color:red;,margin-top:50px;text-align:center;'>The link is invalid/expired. Either you did not copy the correct link
+from the email, or you have already used the key once.<br>Please try again!</p>
+<a href='forgot.php' style='color:red;margin-left:670px;'>
+Click here to reset the password.</a></body>
+</html>";
+ }
+else{
   $row = mysqli_fetch_assoc($query);
   $expDate = $row['expDate'];
   if ($expDate >= $curDate){
@@ -24,8 +32,7 @@ Click here</a> to reset password.</p>';
   <br />
   <html manifest="cache.appache">
 	<head>
-		<title>Update password</title>
-		
+		<title>Update password</title>		
 		<link rel="stylesheet" href="signup.css">
 	</head>
 	<body>
@@ -43,15 +50,18 @@ Click here</a> to reset password.</p>';
   <input type="submit" value="Reset Password" id="butto" />
   </form></div>
 <?php
-}else{
-$error .= "<h2>Link Expired</h2>
-<p>The link is expired. You are trying to use the expired link which 
-as valid only 24 hours (1 days after request).<br /><br /></p>";
-            }
+}
+else{
+echo "<html>
+<head>
+  <meta http-equiv='content-type' content='text/html'; charset='utf-8'/>
+    <title>Fail!</title>
+    <link href='signup.css' rel='stylesheet' type='text/css'/>
+<body><h2 style='color:red;text-align:center;margin-top:50px;'>Link Expired</h2>
+<p style='color:red;text-align:center;'>The link has expired. You are trying to use the expired link which 
+is valid only 24 hours (1 day after request).<br /><br /></p></body>
+</html>";  }
       }
-if($error!=""){
-  echo "<div class='error'>".$error."</div><br />";
-  } 
 } 
 if(isset($_POST["email"]) && isset($_POST["action"]) &&
  ($_POST["action"]=="update")){
@@ -61,7 +71,14 @@ $pass2 = mysqli_real_escape_string($conn,$_POST["pass2"]);
 $email = $_POST["email"];
 $curDate = date("Y-m-d H:i:s");
 if ($pass1!=$pass2){
-$error.= "<p>Password do not match, both password should be same.<br /><br /></p>";
+$error.= "<html>
+<head>
+  <meta http-equiv='content-type' content='text/html'; charset='utf-8'/>
+    <title>Fail!</title>
+    <link href='signup.css' rel='stylesheet' type='text/css'/>
+<body><h2 style='color:red;text-align:center;margin-top:50px;'>Sorry you failed to change your password!<br>Go back to the Update Password Page to try again.</h2>
+</body>
+</html>"; 
   }
   if($error!=""){
 echo "<div class='error'>".$error."</div><br />";
@@ -74,9 +91,7 @@ WHERE `email`='".$email."';"
  
 mysqli_query($conn,"DELETE FROM `temp_reseto` WHERE `email`='".$email."';");
  
-echo '<div class="error"><p>Congratulations! Your password has been updated successfully.</p>
-<p><a href="login1.php">
-Click here</a> to Login.</p></div><br />';
+header("Location:login1.php");
    } 
 }
 ?>
