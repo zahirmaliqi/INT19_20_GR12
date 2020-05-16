@@ -63,7 +63,7 @@
 		<br>
 		<hr  >
 		<div class="end">
-		<div id="cright" > Copyright &copy; 2013 - All Rights Reserved -Part Shop</div>
+		<div id="cright" > Copyright &copy; 2013 - <?php echo date("Y");?> All Rights Reserved -Part Shop</div>
     <div id="temp" >Template by OS Templates</div>
     </div>
 	<br>
