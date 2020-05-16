@@ -8,19 +8,31 @@ date_default_timezone_set('Europe/Tirane');
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 $email = filter_var($email, FILTER_VALIDATE_EMAIL);
 if (!$email) {
-   $error .="<p>Invalid email address please type a valid email address!</p>";
+   echo "<html>
+<head>
+  <meta http-equiv='content-type' content='text/html'; charset='utf-8'/>
+    <title>Fail!</title>
+    <link href='signup.css' rel='stylesheet' type='text/css'/>
+<body><h3 style='color:red;text-align:center;margin-top:50px;'>Please type a valid email address!<br>
+If you are not registered, please don't try anymore!<br>Thank you!</h3>
+ <br /><a href='javascript:history.go(-1)' style='margin-left:750px;color:red;font-weight:bold;'>Go Back</a></body>
+</html>";
    }else{
    $sel_query = "SELECT * FROM users WHERE email='".$email."'";
    $results = mysqli_query($conn,$sel_query);
    $row = mysqli_num_rows($results);
    if ($row==""){
-   $error .= "<p>No user is registered with this email address!</p>";
+ echo "<html>
+<head>
+  <meta http-equiv='content-type' content='text/html'; charset='utf-8'/>
+    <title>Fail!</title>
+    <link href='signup.css' rel='stylesheet' type='text/css'/>
+<body><h3 style='color:red;text-align:center;margin-top:50px;'>You aren't registered with this email address! <br>Please enter the email you are registered!<br>
+If you are not registered, please don't try anymore!<br>Thank you!</h3>
+ <br /><a href='javascript:history.go(-1)' style='margin-left:750px;color:red;font-weight:bold;'>Go Back</a></body>
+</html>";
    }
-  }
-   if($error!=""){
-   echo "<div class='error'>".$error."</div>
-   <br /><a href='javascript:history.go(-1)'>Go Back</a>";
-   }else{
+  else{
    $expFormat = mktime(
    date("H"), date("i"), date("s"), date("m") ,date("d")+1, date("Y")
    );
@@ -69,7 +81,7 @@ echo "<html>
 }
 else{
 echo "Ka deshtuar emaili";
-
+}
 }
    }
 }else{
