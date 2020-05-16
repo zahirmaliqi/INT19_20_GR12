@@ -4,7 +4,7 @@ if(isset($_POST["email"]) && (!empty($_POST["email"]))){
 $email = $_POST["email"];
 $error="";
  
-date_default_timezone_set('Asia/Karachi');
+date_default_timezone_set('Europe/Tirane');
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 $email = filter_var($email, FILTER_VALIDATE_EMAIL);
 if (!$email) {
@@ -25,7 +25,7 @@ if (!$email) {
    date("H"), date("i"), date("s"), date("m") ,date("d")+1, date("Y")
    );
    $expDate = date("Y-m-d H:i:s",$expFormat);
-   $key = md5(2418*2+$email);
+   $key = md5($email);
    $addKey = substr(md5(uniqid(rand(),1)),3,10);
    $key = $key . $addKey;
 // Insert Temp Table
