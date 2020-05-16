@@ -280,15 +280,15 @@ if ($st) {
 	  <address  class="fontshadow" id="replace">Address:Sir Matt Busby Way,
 		  Stretford, Manchester M16 0RA, United Kingdom<button class="videobttn"
 		onclick="myFunction()">Click</button></address>
-	  <p class="fontshadow">The first match at Old Trafford was
-	:<span id="DataObj"></span>between Manchester United and Liverpool</p>
+	  <p class="fontshadow"> The first match at Old Trafford was
+	:  <?php
+              $d=mktime(11, 14, 54, 8, 12, 1974);
+              echo date("d/m/Y h:i:sa", $d);
+            ?> between Manchester United and Liverpool</p>
 
 	</p>
 
-<script>
-var d = new Date(1910, 10, 19, 15, 33, 30);
-document.getElementById("DataObj").innerHTML = d;
-</script>
+
   </div>
   </div>
 
