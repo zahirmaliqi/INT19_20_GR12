@@ -25,6 +25,6 @@ echo fread($myfile,filesize("sometext.txt"));
 fclose($myfile);
 ?>
 </div>
-<?php include("menuu1.php"); ?>
+<?php include("mennu1.php"); ?>
 </body>
 </html>
