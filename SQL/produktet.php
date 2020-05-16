@@ -37,7 +37,7 @@ $conn->close(); */
 	// if(!$result){
 	//	 die("NUK shtohen tdhenat ".mysqli_error($conn));
 	// }
-	// echo "Lajmi eshte shtuar";
+	// echo "Produktet jane shtuar";
  mysqli_close($conn);
 
  
