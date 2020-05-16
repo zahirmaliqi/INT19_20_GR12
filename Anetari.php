@@ -33,11 +33,13 @@ class Anetari
 			}
 
             if (!isset($error_message)) {
-                if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-                    $errorMessage[] = "Invalid email address.";
-                    $valid = false;
-                }
-				
+               if($email = $_POST["email"]){
+             if(!preg_match('/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/',$email))
+              {
+	             $errorMessage[] ="*Email is in a wrong format";
+	             $valid=false;
+                   }
+		}		
             }
         }
         else {
@@ -66,7 +68,7 @@ class Anetari
         $paramType = "sss";
         $paramArray = array(
             $username,
-			$email,   
+            $email,   
             $passwordHash
             
         );
