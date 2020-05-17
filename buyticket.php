@@ -79,7 +79,7 @@ if(!preg_match('/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/',$email))
 	  $buy=$_POST["buy"];
           $terms = $_POST["vehicle1"];  
           $buy=$_POST['buy'];
-   $sel_query = "SELECT * FROM users WHERE email='".$email."' and password='".$code."';
+   $sel_query = "SELECT * FROM users WHERE email='".$email."' and password='".$code."'";
    $results = mysqli_query($db,$sel_query);
    $row = mysqli_num_rows($results);
    if ($row==""){
