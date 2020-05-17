@@ -153,7 +153,7 @@ if($now < $new_seas) {
                                                                       font-size: 2em;
                                                                       letter-spacing: 2px;
                                                                       overflow: hidden;
-								      background: linear-gradient(90deg,black,#8B0000,#8B0000,#8B0000,#FF4500,#DAA520,#8B0000);
+								      background: linear-gradient(90deg,#8B0000,#8B0000,#8B0000,#FF4500,#DAA520,#8B0000,#DAA520);
                                                                       background-repeat: no-repeat;
                                                                       background-size: 100%;
                                                                       animation: animate 10s linear infinite;
