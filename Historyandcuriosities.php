@@ -269,21 +269,8 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 </script>
-		
-<script>
- alert("A test that we are not in 2019 anymore!");
-  var str = prompt("Write today's date:");
 
-  var patt = /20/g;
-  var result = patt.exec(str);
-
-  var patt2 = /2019/g;
-  result2 = patt2.exec(str);
-  alert("20: "+ result +"  2019: "+ result2);
- 
-
-</script>
-		   </div>
+ </div>
 </section>
  <?php include("mennu1.php"); ?>
 </body>
