@@ -165,7 +165,7 @@ $f = new MyClass4('20px','white','Legends');
 </a></li></ol></div>
 <a href="quiz.php"><button type="button" style="padding:2px 15px;font-size:20px;font-weight:700;background: yellow;border-radius:30px;color:black;">Play Quiz!<small>&gt;&gt;</small></button></a>
 
-<?php
+ <?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -178,6 +178,7 @@ if (!$conn) {
     die(" " . mysqli_connect_error());
 }
 echo " ";
+	  /*
 $sql = "CREATE DATABASE quizzer";
 if (mysqli_query($conn, $sql)) {
     echo " ";
@@ -293,7 +294,7 @@ $sql = "CREATE TABLE choices (
       echo "New record created successfully";
     } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+    }*/
     
 ?>
 
