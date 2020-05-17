@@ -21,7 +21,13 @@
           });
         });
         </script>
-       
+ <style type="text/css">
+    @font-face {
+  font-family: clock;
+  src: url(digital-7.ttf);
+  }
+  </style>
+      
     
   </head>
 <?php include("menuu.php"); ?>
