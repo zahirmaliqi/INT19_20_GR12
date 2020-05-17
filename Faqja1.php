@@ -159,7 +159,12 @@ echo $f->customize_print();
 <tr>
 <td>
 <p class="paragrafi"> <img src="Foto1.jpg" id="imazhet">
-<span style="color:#800000;font-weight:bold;">RASHFORD EXPLAINS SUPERB GOALSCORING FORM</span><br>
+<?php 
+  
+  class Myclass7
+  {
+   public $font_size ="16px";
+   public $font_color = "#800000";
    <!--readfile ()- funksion i cili përdoret për të lexuar një file dhe për ta shkruar atë në dalës.-->
    <!--Nese nuk gjendet file athere ekzekuto "File not found".-->
    <?php  
