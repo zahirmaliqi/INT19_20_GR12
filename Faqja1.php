@@ -165,6 +165,9 @@ echo $f->customize_print();
   {
    public $font_size ="16px";
    public $font_color = "#800000";
+   public $string_name = "RASHFORD EXPLAINS SUPERB GOALSCORING FORM";
+   public $string_name2 ="We will never die .We will keep the red flag flying high";
+   public function customize_print()
    <!--readfile ()- funksion i cili përdoret për të lexuar një file dhe për ta shkruar atë në dalës.-->
    <!--Nese nuk gjendet file athere ekzekuto "File not found".-->
    <?php  
