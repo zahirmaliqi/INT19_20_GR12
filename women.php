@@ -15,6 +15,20 @@
 
     
     <title>Women Gallery</title>
+    <style type="text/css">
+       @font-face {
+             font-family: clock;
+             src: url(digital-7.ttf);
+                  }
+
+       #time{
+             width: 100%;
+             margin: 0 auto;
+             font-family: clock;
+             font-size: 20px;
+
+                  }
+  </style>
     
   </head>
 
