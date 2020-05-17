@@ -32,6 +32,15 @@
 </head>
 <body>
 <?php include("menuu.php"); ?>
+	
+      <?php
+$host_name = 'www.google.com';
+$port_no = '80';
+
+$st = (bool)@fsockopen($host_name, $port_no, $err_no, $err_str, 10);
+if ($st) {
+    echo "<img  src='greenlight.gif' style='width:35px;height:35px;' />";
+} 
 <?php
 $host_name = 'www.google.com';
 $port_no = '80';
