@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="style1.css">
-   <link rel="stylesheet" href="stiliT.css">
-	 <link rel="stylesheet" href="titulli.css">
-	<link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stiliT.css">
+    <link rel="stylesheet" href="titulli.css">
+    <link rel="stylesheet" type="text/css" href="zahirmaliqi.css">
 	
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
@@ -163,7 +163,7 @@ if($now < $new_seas) {
                 font-size: 2em;
                 letter-spacing: 2px;
                 overflow: hidden; 
-		background: linear-gradient(90deg,#8B0000,#8B0000,#8B0000,#FF4500,#DAA520,#8B0000);
+		background: linear-gradient(90deg,#8B0000,#8B0000,#8B0000,#800000,#FF4500,#DAA520,#8B0000);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 animation: animate 10s linear infinite;
@@ -177,7 +177,7 @@ if($now < $new_seas) {
                                                                       font-size: 2em;
                                                                       letter-spacing: 2px;
                                                                       overflow: hidden;
-								      background: linear-gradient(90deg,#8B0000,#8B0000,#8B0000,#FF4500,#DAA520,#8B0000,#DAA520);
+								      background: linear-gradient(90deg,#8B0000,#8B0000,#8B0000,#FF4500,#800000,#DAA520,#8B0000,#DAA520);
                                                                       background-repeat: no-repeat;
                                                                       background-size: 100%;
                                                                       animation: animate 10s linear infinite;
