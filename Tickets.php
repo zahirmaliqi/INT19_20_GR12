@@ -138,7 +138,16 @@ if($now < $new_seas) {
                 font-family: Georgia;
                 font-size: 2em;
                 letter-spacing: 2px;
-                overflow: hidden; ).' <span>until next season!</span>';
+                overflow: hidden; 
+		background: linear-gradient(90deg,black,#8B0000,#8B0000,#8B0000,#FF4500,#DAA520,#8B0000, black);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                animation: animate 10s linear infinite;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: rgba(255, 255, 255, 0);
+                margin-left: 550px;
+                margin-bottom: 1.5px;
+                text-align: center;"=>%a days</span>').' <span>until next season!</span>';
 }
  
 if($now == $new_seas) {
