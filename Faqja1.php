@@ -168,6 +168,15 @@ echo $f->customize_print();
    public $string_name = "RASHFORD EXPLAINS SUPERB GOALSCORING FORM";
    public $string_name2 ="We will never die .We will keep the red flag flying high";
    public function customize_print()
+	    {
+   echo "<strong><p style=font-size:".$this->font_size.";color:".$this->font_color.";>".$this->string_name."</p></strong>";
+ 
+   
+   }
+  }
+  $f = new MyClass7;
+  echo $f->customize_print();
+  ?>
    <!--readfile ()- funksion i cili përdoret për të lexuar një file dhe për ta shkruar atë në dalës.-->
    <!--Nese nuk gjendet file athere ekzekuto "File not found".-->
    <?php  
