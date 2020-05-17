@@ -72,6 +72,8 @@ if ($st) {
     echo "<img  src='no_int.gif' style='width:100px;height:100px;' />";
 }
 ?>
+<span style="color: white;"  id="time"> 00:00:00 AM </span>
+	
 
 		  <div class="ekipet">
 <ol style="color:red">
