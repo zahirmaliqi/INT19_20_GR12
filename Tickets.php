@@ -147,7 +147,13 @@ if($now < $new_seas) {
                -webkit-text-fill-color: rgba(255, 255, 255, 0);
                 margin-left: 550px;
                 margin-bottom: 1.5px;
-                text-align: center;"=>%a days</span>').' <span>until next season!</span>';
+                text-align: center;"=>%a days</span>').' <span style="color:red;
+		                                                      position: relative;
+                                                                      font-family: Georgia;
+                                                                      font-size: 2em;
+                                                                      letter-spacing: 2px;
+                                                                      overflow: hidden;
+                                                                      "> until next season!</span>';
 }
  
 if($now == $new_seas) {
