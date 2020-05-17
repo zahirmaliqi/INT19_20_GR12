@@ -94,7 +94,7 @@ if($stmt = mysqli_prepare($db,"INSERT INTO tiketa(username,lastname,code,email,p
   {
 	  die("nuk jan konfiguru te dhenat ".mysqli_error($db));
   }
-echo "You are registered successfully $name $lastname <br> To get your $buy please email us at rrezeartathaqi@hotmail.com";
+echo "You are registered successfully $name $lastname <br> To get your $buy please email us at manutd1PI@gmail.com";
 
 }
  }
