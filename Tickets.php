@@ -133,7 +133,12 @@ while($now > $new_seas) {
  
 if($now < $new_seas) {
     $interval = $now->diff($new_seas);
-    echo $interval->format('<span>%a days</span>').' <span>until next season!</span>';
+       echo $interval->format('<span 
+         style="position: relative;
+                font-family: Georgia;
+                font-size: 2em;
+                letter-spacing: 2px;
+                overflow: hidden; ).' <span>until next season!</span>';
 }
  
 if($now == $new_seas) {
