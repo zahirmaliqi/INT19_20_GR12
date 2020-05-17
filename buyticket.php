@@ -79,11 +79,11 @@ if(!preg_match('/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/',$email))
 	  $buy=$_POST["buy"];
           $terms = $_POST["vehicle1"];  
           $buy=$_POST['buy'];
-   $sel_query = "SELECT * FROM users WHERE email='".$email."' and password='".$code."' and emri='".$name."'";
+   $sel_query = "SELECT * FROM users WHERE email='".$email."' and password='".$code."';
    $results = mysqli_query($db,$sel_query);
    $row = mysqli_num_rows($results);
    if ($row==""){
-   echo "This user is not registered<br>Please check your name, email or password!";
+   echo "This user is not registered<br>Please check your email or password!";
    }
  else{
 if($stmt = mysqli_prepare($db,"INSERT INTO tiketa(username,lastname,code,email,phonenumber,buy) VALUES (?,?,?,?,?,?)") );
