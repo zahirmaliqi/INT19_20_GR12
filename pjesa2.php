@@ -126,7 +126,7 @@ cursor: pointer;
 }
 
 body{
-	background-color: <?php echo(isset($_SESSION['color']))?'#' . $_SESSION['color']:'#800000'; ?>;
+	background-color: <?php echo(isset($_SESSION['color']))?'#' . $_SESSION['color']:'#000000'; ?>;
 }
 	
 .subbut{
