@@ -43,7 +43,7 @@ $db = getDB();
 	
   <div style="float: right">
     <form method="get" action="pamja.php">
-	<input type="search" name="<?php echo SEARCHBOX; ?>"     
+	<input type="search" style="color:white" name="<?php echo SEARCHBOX; ?>"     
 	  placeholder="Search Our Website..." value="<?php echo getSearchFor(); ?>" class="search" />
           
            <input type="submit" name="submit" class="submit" value="SEARCH">
