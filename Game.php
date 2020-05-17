@@ -161,9 +161,6 @@ if ($st) {
 
             snake.pop();
             snake.unshift({x: _x, y: _y});
-
-        
-        
             if(wall == 1){
            
                 if (snake[0].x < 0 || snake[0].x == canvas.width / 10 || snake[0].y < 0 || snake[0].y == canvas.height / 10){
@@ -350,21 +347,5 @@ if ($st) {
 
 })();
 
-
-  </script>
-	<script>
-	try {
-  let name = prompt("Type your name:");
-  if (name == ''){
-    throw new Error("Oops, you didn't type your name!");
-  }
-}
-catch(e) {
-  alert(e.message);
-}
-finally {
-  alert('Thanks for playing!');
-}
-	</script>
 </body>      
 </html>
