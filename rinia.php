@@ -634,7 +634,7 @@ $f = new MyClass4('20px','white','Legends');
 					echo " Appearances:$appearances<br> Born in $year<br>Age: $age<br>Clean Sheets:$sheets <br>Joined:$join<br>";
 				}
 
-				rinia80("380","1990","29","131","2 Jul 2011");
+				rinia80("220","1990","29","120","2 August 2011");
 
 				?></div></div>
 					
