@@ -61,7 +61,7 @@
   In 1922, three years after the resumption of football following the First World War, the club was relegated to the Second Division, where it remained until regaining 
   promotion in 1925. Relegated again in 1931, Manchester United became a yo-yo club, achieving its all-time lowest position of 20th place in the Second Division in 1934.</p>
 	</article>
-  <img src="Trophies3.jpg" alt="Trophies" style="width=300px;height:300px;float:left;margin-top:10px;margin-bottom:10px;margin-left:0;margin-right:15px;" id="img">
+  <img src="Trophies3.jpg" alt="Trophies" style="width:300px;height:300px;float:left;margin-top:10px;margin-bottom:10px;margin-left:0;margin-right:15px;" id="img">
   <h3>Present</h3>
 	<article>
   <p class="pstyle">Manchester United have won more trophies than any other club in English football, with a record 20 League titles, 12 FA Cups, five League Cups and a record 21 FA 
@@ -72,7 +72,7 @@
   price was cut to &dollar;14 by the launch of the IPO on 10 August, following negative comments from Wall Street analysts and Facebook's disappointing stock market debut in May. Even after the 
 	  cut, Manchester United was valued at <b>&dollar;2.3 billion</b>, making it the most valuable football club in the world.Manchester United was the highest-earning football club in the world for 2016–17, with an annual
 	  revenue of <b>&euro;676.3 million</b>, and the world's third most valuable football club in 2019, valued at <b>&pound;3.15 billion</b> (&dollar;3.81 billion). As of June 2015, it is the world's most valuable football brand, estimated 
-	  to be worth <b>&dollar;1.2 billion.</b></p>
+	  to be worth <b>&dollar;</p>
 	</article>
   <br>
 </div>
