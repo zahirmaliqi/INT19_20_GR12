@@ -52,8 +52,8 @@
 				<p>&nbsp;&nbsp;   GRAB OUR NEWSLETTER</p>
 				
 				<form action="email.php" method="post">
-					<input type="text" name="Emri" placeholder="Name"><br>
-					<input type="text" name="Email" placeholder="Email" autocomplete="off"><br>
+					<input type="text" name="Emri" placeholder="Name" style="color:white"><br>
+					<input type="text" name="Email" placeholder="Email" autocomplete="off" style="color:white"><br>
 					<input type="submit" name="Ruaj" value="SUBMIT" id="submit"> 
 				</form>
 
