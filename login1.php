@@ -44,6 +44,7 @@ setcookie ("user_password",$_REQUEST["password"],time()+ (10 * 365 * 24 * 60 * 6
 
 <html>
     <head>
+    <title>Login</title>
     
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 <link rel="stylesheet" href="login1.css">
