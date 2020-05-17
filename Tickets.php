@@ -51,6 +51,15 @@ if ($st) {
     echo "<img  src='no_int.gif' style='width:100px;height:100px;' />";
 }
 ?>
+<span style="color: white;"  id="time"> 00:00:00 AM </span>
+  <script>
+    $(document).ready(function(){
+      setInterval(function(){
+        $('#time').load('time.php')
+
+      },1000)
+      });
+  </script>
 	
     <body>     
         <script>
