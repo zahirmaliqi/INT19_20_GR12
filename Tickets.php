@@ -25,6 +25,18 @@
     
   </head>
 <?php include("menuu.php"); ?>
+<?php
+$host_name = 'www.google.com';
+$port_no = '80';
+
+$st = (bool)@fsockopen($host_name, $port_no, $err_no, $err_str, 10);
+if ($st) {
+    echo "<img  src='greenlight.gif' />";
+} else {
+    echo "<img  src='no_int.gif' />";
+}
+?>
+	
     <body>     
         <script>
             function myFunction() {
